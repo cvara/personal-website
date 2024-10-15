@@ -6,4 +6,4 @@
 
 // You can delete this file if you're not using it
 
-import "./src/styles/global.css" // Import Tailwind globally
+import "./src/styles/global.css"; // Import Tailwind globally

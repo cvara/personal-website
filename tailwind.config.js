@@ -6,4 +6,4 @@ module.exports = {
     extend: {},
   },
   plugins: [`gatsby-plugin-postcss`],
-}
+};
