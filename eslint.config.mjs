@@ -1,7 +1,7 @@
-import globals from "globals"
-import pluginJs from "@eslint/js"
-import tseslint from "typescript-eslint"
-import pluginReact from "eslint-plugin-react"
+import globals from "globals";
+import pluginJs from "@eslint/js";
+import tseslint from "typescript-eslint";
+import pluginReact from "eslint-plugin-react";
 
 export default [
   pluginJs.configs.recommended,
@@ -16,7 +16,7 @@ export default [
   },
   {
     languageOptions: {
-      globals: globals.browser,
+      globals: [globals.browser, globals.node],
     },
   },
-]
+];
