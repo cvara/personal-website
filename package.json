@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "homepage": "https://cvara.github.io/personal-website",
   "dependencies": {
+    "@fontsource/lato": "^5.1.0",
     "autoprefixer": "^10.4.20",
     "gatsby": "^5.13.7",
     "gatsby-plugin-image": "^3.13.1",

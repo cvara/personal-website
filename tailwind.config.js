@@ -19,11 +19,7 @@ module.exports = {
         dark: "#889096",
       },
     },
-    extend: {
-      fontFamily: {
-        sans: ["Lato", "sans-serif"],
-      },
-    },
+    extend: {},
   },
   plugins: [`gatsby-plugin-postcss`],
 };

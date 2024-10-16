@@ -6,4 +6,5 @@
 
 // You can delete this file if you're not using it
 
+import "@fontsource/lato";
 import "./src/styles/global.css"; // Import Tailwind globally
