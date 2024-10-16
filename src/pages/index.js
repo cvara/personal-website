@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Button from "../components/button";
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
+      <Button>Click me</Button>
     </div>
   </Layout>
 );

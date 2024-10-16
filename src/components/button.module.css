@@ -1,0 +1,58 @@
+.button {
+  position: relative;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 2px; /* Adjust to control the border thickness */
+  background: linear-gradient(45deg, theme(colors.purple), theme(colors.teal));
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: -1; /* Keeps the gradient behind the text */
+
+  /* transition: background 0.3s ease; Smooth transition for the gradient */
+}
+
+.button:hover::before {
+  background: theme(colors.purple);
+}
+
+.button span {
+  background: linear-gradient(
+    45deg,
+    theme(colors.purple),
+    theme(colors.teal)
+  ); /* Gradient text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Text color will show gradient */
+  font-weight: 700;
+}
+
+.button:hover span {
+  background: theme(colors.purple);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Text color will show gradient */
+}
