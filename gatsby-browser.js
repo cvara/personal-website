@@ -4,7 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
  */
 
-// You can delete this file if you're not using it
+// Import required fonts
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
 
-import "@fontsource/lato";
-import "./src/styles/global.css"; // Import Tailwind globally
+// Import Tailwind globally
+import "./src/styles/global.css";

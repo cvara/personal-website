@@ -12,6 +12,7 @@ export default [
     rules: {
       "@typescript-eslint/no-unused-vars": "warn",
       "react/prop-types": "warn",
+      "@typescript-eslint/no-require-imports": "off",
     },
   },
   {

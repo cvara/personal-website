@@ -1,9 +1,10 @@
 import * as React from "react";
+import clsx from "clsx";
 
 import * as styles from "./button.module.css";
 
-const Button = ({ children }) => (
-  <button className={styles.button}>
+const Button = ({ children, className }) => (
+  <button className={clsx(styles.button, className)}>
     <span>{children}</span>
   </button>
 );
