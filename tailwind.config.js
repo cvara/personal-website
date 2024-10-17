@@ -11,11 +11,11 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       teal: {
-        light: "#CCEEF3",
+        light: "#EAF9FB",
         DEFAULT: "#00BCD4",
       },
       purple: {
-        light: "#E3D1E8",
+        light: "#F2E9F4",
         DEFAULT: "#8E44AD",
       },
       navy: "#1C2833",

@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <div className="flex flex-col justify-center h-svh p-2">
       <div className="flex flex-col items-center">
-        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[6px] mb-8 w-[146px] max-sm:w-[124px]">
+        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] mb-8 w-[146px] max-sm:w-[124px]">
           <StaticImage
             src="../images/profile_pic.jpg"
             loading="eager"

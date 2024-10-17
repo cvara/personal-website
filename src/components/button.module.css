@@ -19,7 +19,7 @@
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  padding: 1px; /* Adjust to control the border thickness */
+  padding: 2px; /* Adjust to control the border thickness */
   background: linear-gradient(
     45deg,
     theme(colors.purple.DEFAULT),
