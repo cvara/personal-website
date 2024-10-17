@@ -10,8 +10,14 @@ module.exports = {
       current: "currentColor",
       black: colors.black,
       white: colors.white,
-      teal: "#00BCD4",
-      purple: "#8E44AD",
+      teal: {
+        light: "#CCEEF3",
+        DEFAULT: "#00BCD4",
+      },
+      purple: {
+        light: "#E3D1E8",
+        DEFAULT: "#8E44AD",
+      },
       navy: "#1C2833",
       gray: {
         light: "#F5F7FA",

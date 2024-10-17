@@ -33,7 +33,7 @@ module.exports = {
         name: `christoforos-varakliotis-software-engineer`,
         short_name: `christoforos`,
         start_url: `/`,
-        background_color: tailwindConfig.theme.colors.purple,
+        background_color: tailwindConfig.theme.colors.purple.DEFAULT,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: tailwindConfig.theme.colors.purple,
