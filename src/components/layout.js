@@ -25,9 +25,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="min-h-svh">
+        <div className="absolute top-0 left-0 right-0 text-center h-[6px] bg-gradient-to-r from-purple to-teal" />
         <main>{children}</main>
-        <footer className="text-fine">
-          © {new Date().getFullYear()} &middot; Built with ☕ and ❤️
+        <footer className="absolute bottom-0 left-0 right-0 text-center px-2 py-4 ">
+          <div className="bg-gradient-to-r from-purple to-teal inline-block text-transparent bg-clip-text font-bold text-[12px]">
+            © {new Date().getFullYear()} &middot; Christoforos Varakliotis
+          </div>
         </footer>
       </div>
     </>

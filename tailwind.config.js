@@ -28,8 +28,24 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+      titleSm: [
+        "36px",
+        {
+          lineHeight: "1.2",
+          // letterSpacing: '-0.01em',
+          fontWeight: "400",
+        },
+      ],
       subtitle: [
         "24px",
+        {
+          lineHeight: "1.2",
+          // letterSpacing: '-0.02em',
+          fontWeight: "300",
+        },
+      ],
+      subtitleSm: [
+        "21px",
         {
           lineHeight: "1.2",
           // letterSpacing: '-0.02em',

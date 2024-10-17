@@ -5,15 +5,18 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Button from "../components/button";
 
+import GithubIcon from "../svg/github.svg";
+import LinkedinIcon from "../svg/linkedin.svg";
+
 const IndexPage = () => (
   <Layout>
-    <div className="flex flex-col justify-center h-svh">
+    <div className="flex flex-col justify-center h-svh p-2">
       <div className="flex flex-col items-center">
-        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-0.5 mb-10">
+        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[6px] mb-8 w-[146px] max-sm:w-[124px]">
           <StaticImage
-            src="../images/profile_pic.webp"
+            src="../images/profile_pic.jpg"
             loading="eager"
-            width={146}
+            layout="fullWidth"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="profile pic"
@@ -21,12 +24,16 @@ const IndexPage = () => (
           />
         </div>
         <div className="flex flex-col items-center">
-          <div className="text-subtitle mb-1 text-navy">Hi there, I am </div>
-          <div className="text-title mb-3 text-navy">Christoforos</div>
-          <div className="text-subtitle text-navy mb-10">
+          <div className="text-subtitleSm md:text-subtitle mb-1 text-navy">
+            Hi there, I am{" "}
+          </div>
+          <div className="text-titleSm md:text-title mb-3 text-navy">
+            Christoforos
+          </div>
+          <div className="text-subtitleSm md:text-subtitle text-navy mb-10">
             Web Engineer, Innovator, Tutor
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-4 mb-6 max-sm:flex-col">
             <a href="mailto:c.varakliotis@gmail.com">
               <Button className="w-40">Say hello</Button>
             </a>
@@ -36,6 +43,18 @@ const IndexPage = () => (
               rel="noreferrer"
             >
               <Button className="w-40">View CV</Button>
+            </a>
+          </div>
+          <div className="flex gap-4 ">
+            <a href="https://github.com/cvara" target="_blank" rel="noreferrer">
+              <GithubIcon width={32} height="auto" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/christoforosvarakliotis/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedinIcon width={32} height="auto" />
             </a>
           </div>
         </div>
