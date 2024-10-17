@@ -19,7 +19,7 @@
   right: 0;
   bottom: 0;
   border-radius: 20px;
-  padding: 2px; /* Adjust to control the border thickness */
+  padding: 1px; /* Adjust to control the border thickness */
   background: linear-gradient(45deg, theme(colors.purple), theme(colors.teal));
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -39,11 +39,8 @@
 }
 
 .button span {
-  background: linear-gradient(
-    45deg,
-    theme(colors.purple),
-    theme(colors.teal)
-  ); /* Gradient text */
+  /* Gradient text */
+  background: linear-gradient(45deg, theme(colors.purple), theme(colors.teal));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Text color will show gradient */
