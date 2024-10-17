@@ -5,25 +5,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Button from "../components/button";
 
-const IndexPage = () => (
-  <Layout>
-    <div>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <Button>Click me</Button>
-    </div>
-  </Layout>
-);
+const IndexPage = () => <Layout></Layout>;
 
 /**
  * Head export to define metadata for the page
