@@ -1,9 +1,11 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import ResumeExperience from "../components/resumeExperience";
+import ResumeExperience from "../components/resume/experience";
+import ResumeTitle from "../components/resume/title";
 
 const positions = [
   {
@@ -77,10 +79,10 @@ const positions = [
     occupation: "Co-Founder",
     company: "Noodio",
     start: "Aug 2011",
-    end: "Dec 2016",
+    end: "Dec 2018",
     technologies:
       "JavaScript (Backbone, Marionette, Require.js, Grunt, Node.js), HTML5, CSS3/LESS, Java, Groovy, Grails, MySQL, MongoDB, et al",
-    description: `Noodio was an award-winning four-member web startup offering targeted promotion for musicians on a local level. I authored the first version of its back-end and was responsible for re-designing, building, testing and optimizing its front-end and UX later on. The community based filtering algorithm at the core of Noodio was also part of my diploma thesis at the University of Thessaly. Noodio reached the end of its life in December 2018.`,
+    description: `Noodio was an award-winning four-member web startup offering targeted promotion for musicians on a local level. I authored the first version of its back-end and was responsible for re-designing, building, testing and optimizing its front-end and UX later on. The community based filtering algorithm at the core of Noodio was also part of my diploma thesis at the University of Thessaly. Having proudly won the <a href="https://acein.aueb.gr/en/ennovation-competition/" target="_blank">1st Award</a> in the Innovation & Entrepreneurship category at the 2015 <a href="https://acein.aueb.gr/en/ennovation-competition/" target="_blank">Ennovation</a> competition, Noodio reached the end of its life in December 2018.`,
   },
   {
     title: "Student",
@@ -95,10 +97,54 @@ const positions = [
 
 const Resume = () => (
   <Layout>
-    <div className="flex flex-col gap-4">
-      {positions.map((position, idx) => (
-        <ResumeExperience key={idx} experience={position} />
-      ))}
+    <div className="max-w-[640px] m-auto p-4">
+      <div className="flex gap-4 items-center mb-8">
+        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[112px]">
+          <StaticImage
+            src="../images/profile_pic.jpg"
+            loading="eager"
+            layout="fullWidth"
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt="profile pic"
+            className="rounded-full overflow-clip"
+          />
+        </div>
+        <div>
+          <div className="text-3xl font-bold">Christoforos Varakliotis</div>
+          <div className="text-md">Web Engineer</div>
+        </div>
+      </div>
+      <div className="mb-8">
+        <p className="mb-3">
+          A full stack web engineer showing a particular interest in the
+          front-end technologies and a co-founder of a web-based startup, I have
+          been professionally involved with the web ecosystem since 2011.
+        </p>
+        <p className="mb-3">
+          My expertise lies in building and testing responsive user interfaces
+          and tackling algorithmic problems being mindful of efficiency and
+          performance. With a knack for design, I tend to get actively involved
+          in the user experience improvement process on the projects I work on.
+        </p>
+        <p className="mb-3">
+          Always eager to learn and apply software design patterns in pursuit of
+          clean, idiomatic and maintainable code, I am passionate about all
+          things Javascript, open web standards and functional programming.
+        </p>
+        <p className="mb-3">
+          I got my Polytechnic Diploma in Computer & Communications Engineering
+          from the University of Thessaly in 2010.
+        </p>
+      </div>
+      <div>
+        <ResumeTitle className="text-2xl mb-8">The Road So Far</ResumeTitle>
+        <div className="flex flex-col">
+          {positions.map((position, idx) => (
+            <ResumeExperience key={idx} experience={position} />
+          ))}
+        </div>
+      </div>
     </div>
   </Layout>
 );

@@ -24,7 +24,9 @@ const Layout = ({ children }) => {
 
   return (
     <main className="min-h-svh flex flex-col">
-      <div className="flex grow shrink basis-1/2 h-0">{children}</div>
+      <div className="flex flex-col grow shrink basis-1/2 h-0 p-2 md:p-4">
+        {children}
+      </div>
       <footer className="grow-0 shrink-0 flex-col flex items-center">
         <div className="inline-block text-purple font-bold opacity-100 text-[12px] px-2 py-4">
           © {new Date().getFullYear()} &middot;{" "}

@@ -1,8 +1,0 @@
-.experience {
-  a {
-    @apply font-bold decoration-from-font no-underline text-purple;
-    &:hover {
-      @apply decoration-from-font no-underline text-purple;
-    }
-  }
-}

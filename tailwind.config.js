@@ -59,14 +59,6 @@ module.exports = {
             fontWeight: "300",
           },
         ],
-        base: [
-          "14px",
-          {
-            lineHeight: "20px",
-            // letterSpacing: '-0.02em',
-            fontWeight: "400",
-          },
-        ],
         fine: [
           "14px",
           {
