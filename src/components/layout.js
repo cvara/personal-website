@@ -25,15 +25,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="min-h-svh">
-        <div className="absolute top-0 left-0 right-0 text-center h-[4px] bg-gradient-to-r from-purple to-teal" />
         <main>{children}</main>
-        <footer className="absolute bottom-0 left-0 right-0 text-center px-2 py-4 ">
-          <div className=" inline-block text-purple  font-bold opacity-100 text-[12px]">
+        <footer className="absolute bottom-0 left-0 right-0 text-center  ">
+          <div className=" inline-block text-purple  font-bold opacity-100 text-[12px] px-2 py-4">
             © {new Date().getFullYear()} &middot;{" "}
             <span className="bg-gradient-to-r from-purple to-teal bg-clip-text text-transparent">
               Christoforos Varakliotis
             </span>
           </div>
+          <div className="text-center h-[4px] bg-gradient-to-r from-purple to-teal" />
         </footer>
       </div>
     </>
