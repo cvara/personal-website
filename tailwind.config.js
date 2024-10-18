@@ -25,57 +25,58 @@ module.exports = {
         dark: "#889096",
       },
     },
-    fontSize: {
-      title: [
-        "48px",
-        {
-          lineHeight: "1.2",
-          // letterSpacing: '-0.01em',
-          fontWeight: "400",
-        },
-      ],
-      titleSm: [
-        "36px",
-        {
-          lineHeight: "1.2",
-          // letterSpacing: '-0.01em',
-          fontWeight: "400",
-        },
-      ],
-      subtitle: [
-        "24px",
-        {
-          lineHeight: "1.2",
-          // letterSpacing: '-0.02em',
-          fontWeight: "300",
-        },
-      ],
-      subtitleSm: [
-        "21px",
-        {
-          lineHeight: "1.2",
-          // letterSpacing: '-0.02em',
-          fontWeight: "300",
-        },
-      ],
-      base: [
-        "14px",
-        {
-          lineHeight: "20px",
-          // letterSpacing: '-0.02em',
-          fontWeight: "400",
-        },
-      ],
-      fine: [
-        "14px",
-        {
-          lineHeight: "20px",
-          // letterSpacing: '-0.02em',
-          fontWeight: "300",
-        },
-      ],
+    extend: {
+      fontSize: {
+        title: [
+          "48px",
+          {
+            lineHeight: "1.2",
+            // letterSpacing: '-0.01em',
+            fontWeight: "400",
+          },
+        ],
+        titleSm: [
+          "36px",
+          {
+            lineHeight: "1.2",
+            // letterSpacing: '-0.01em',
+            fontWeight: "400",
+          },
+        ],
+        subtitle: [
+          "24px",
+          {
+            lineHeight: "1.2",
+            // letterSpacing: '-0.02em',
+            fontWeight: "300",
+          },
+        ],
+        subtitleSm: [
+          "21px",
+          {
+            lineHeight: "1.2",
+            // letterSpacing: '-0.02em',
+            fontWeight: "300",
+          },
+        ],
+        base: [
+          "14px",
+          {
+            lineHeight: "20px",
+            // letterSpacing: '-0.02em',
+            fontWeight: "400",
+          },
+        ],
+        fine: [
+          "14px",
+          {
+            lineHeight: "20px",
+            // letterSpacing: '-0.02em',
+            fontWeight: "300",
+          },
+        ],
+      },
     },
-    extend: {},
   },
   plugins: [`gatsby-plugin-postcss`],
 };
