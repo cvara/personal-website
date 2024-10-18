@@ -23,20 +23,18 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      <div className="min-h-svh">
-        <main>{children}</main>
-        <footer className="absolute bottom-0 left-0 right-0 text-center  ">
-          <div className=" inline-block text-purple  font-bold opacity-100 text-[12px] px-2 py-4">
-            © {new Date().getFullYear()} &middot;{" "}
-            <span className="bg-gradient-to-r from-purple to-teal bg-clip-text text-transparent">
-              Christoforos Varakliotis
-            </span>
-          </div>
-          <div className="text-center h-[4px] bg-gradient-to-r from-purple to-teal" />
-        </footer>
-      </div>
-    </>
+    <main className="min-h-svh flex flex-col">
+      <div className="flex grow shrink basis-1/2 h-0">{children}</div>
+      <footer className="grow-0 shrink-0 flex-col flex items-center">
+        <div className="inline-block text-purple font-bold opacity-100 text-[12px] px-2 py-4">
+          © {new Date().getFullYear()} &middot;{" "}
+          <span className="bg-gradient-to-r from-purple to-teal bg-clip-text text-transparent">
+            Christoforos Varakliotis
+          </span>
+        </div>
+        <div className="text-center h-[4px] bg-gradient-to-r from-purple to-teal w-full" />
+      </footer>
+    </main>
   );
 };
 
