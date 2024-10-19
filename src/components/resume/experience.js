@@ -25,10 +25,11 @@ const Experience = ({ experience, className }) => (
       "group [&:not(:last-child)]:pb-10 relative pl-4 ml-2",
     )}
   >
-    <div className="w-[2px] group-last:w-0 absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-teal">
-      <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-tr from-purple to-teal absolute top-[-6px] left-[-5px]" />
+    <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-purple">
+      <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-t from-purple to-purple absolute top-[-6px] left-[-5px]" />
+      <div className="w-[8px] h-[2px] bg-purple absolute bottom-[-2px] left-[-3px]" />
     </div>
-    <div className="text-xs bg-gradient-to-tr from-purple to-teal bg-clip-text text-transparent font-bold mb-2">
+    <div className="text-xs bg-gradient-to-tr from-purple to-purple bg-clip-text text-transparent font-bold mb-2">
       {experience.start} - {experience.end}
     </div>
 
