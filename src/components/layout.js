@@ -28,8 +28,8 @@ const Layout = ({ children }) => {
         {children}
       </div>
       <footer className="grow-0 shrink-0 flex-col flex items-center">
-        <div className="inline-block text-purple font-bold opacity-100 text-[12px] px-2 py-4">
-          © {new Date().getFullYear()} &middot;{" "}
+        <div className="inline-flex gap-1 text-purple font-bold opacity-100 text-[12px] px-2 py-4">
+          <div>© {new Date().getFullYear()} </div>&middot;{" "}
           <span className="bg-gradient-to-r from-purple to-teal bg-clip-text text-transparent">
             Christoforos Varakliotis
           </span>
