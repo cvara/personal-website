@@ -19,8 +19,16 @@ const propTypes = {
 };
 
 const Experience = ({ experience, className }) => (
-  <div className={clsx(className, "[&:not(:last-child)]:pb-8")}>
-    <div className="text-xs text-gray-dark">
+  <div
+    className={clsx(
+      className,
+      "group [&:not(:last-child)]:pb-10 relative pl-4 ml-2",
+    )}
+  >
+    <div className="w-[2px] group-last:w-0 absolute left-0 top-2 -bottom-2 bg-purple">
+      <div className="w-[12px] h-[12px] rounded-full bg-purple absolute top-[-6px] left-[-5px]" />
+    </div>
+    <div className="text-xs text-purple font-bold mb-2">
       {experience.start} - {experience.end}
     </div>
 
@@ -53,8 +61,14 @@ const Experience = ({ experience, className }) => (
 
     <div
       dangerouslySetInnerHTML={{ __html: experience.description }}
-      className={styles.description}
+      className={clsx(styles.description)}
     />
+
+    {experience.technologies && (
+      <div className="mt-4 text-sm text-gray-dark">
+        {experience.technologies}
+      </div>
+    )}
   </div>
 );
 
