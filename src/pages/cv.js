@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import ResumeExperience from "../components/resume/experience";
+import ResumeProject from "../components/resume/project";
 import ResumeTitle from "../components/resume/title";
 
 const positions = [
@@ -95,7 +96,23 @@ const positions = [
   },
 ];
 
-const projects = [];
+const projects = [
+  {
+    title: "rxdb-hooks",
+    url: "https://github.com/cvara/rxdb-hooks",
+    description: "React hooks for integrating with RxDB",
+  },
+  {
+    title: "typely",
+    url: "https://github.com/cvara/typely",
+    description: "A rich text editor for the browser inspired by medium",
+  },
+  {
+    title: "tesserae",
+    url: "https://github.com/cvara/tesserae",
+    description: "Animated mosaic backgrounds with HTML5 Canvas",
+  },
+];
 
 const CV = () => (
   <Layout>
@@ -117,6 +134,7 @@ const CV = () => (
           <div className="text-xl">Web Engineer</div>
         </div>
       </div>
+
       <div className="mb-14 text-lg">
         <p className="mb-3">
           A full stack web engineer showing a particular interest in the
@@ -139,13 +157,40 @@ const CV = () => (
           from the University of Thessaly in 2010.
         </p>
       </div>
-      <div>
+
+      <div className="mb-16">
         <ResumeTitle className="text-2xl mb-8">The Road So Far</ResumeTitle>
         <div className="flex flex-col">
           {positions.map((position, idx) => (
             <ResumeExperience key={idx} experience={position} />
           ))}
         </div>
+      </div>
+
+      <div className="mb-12">
+        <ResumeTitle className="text-2xl mb-8">
+          Featured Hobby Projects
+        </ResumeTitle>
+        <div className="flex flex-col">
+          {projects.map((project, idx) => (
+            <ResumeProject key={idx} project={project} />
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <ResumeTitle className="text-2xl mb-8">Honors & Awards</ResumeTitle>
+        <ul className="marker:text-purple ml-4">
+          <li className="mb-4 list-disc">
+            Award & honor from the Greek National Foundation of Scholarships for
+            ranking 1st amongst students of the Dept of Computer and
+            Communications Engineering, University of Thessaly, 2004 & 2005.
+          </li>
+          <li className="list-disc">
+            1st Award for Noodio in the Innovation & Entrepreneurship category
+            at the 2015 Ennovation competition.
+          </li>
+        </ul>
       </div>
     </div>
   </Layout>

@@ -22,10 +22,10 @@ const Experience = ({ experience, className }) => (
   <div
     className={clsx(
       className,
-      "group [&:not(:last-child)]:pb-10 relative pl-4 ml-2",
+      "group [&:not(:last-child)]:pb-10 relative pl-4 ml-2 print:pl-0",
     )}
   >
-    <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-purple">
+    <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-purple print:hidden">
       <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-t from-purple to-purple absolute top-[-6px] left-[-5px]" />
       <div className="w-[8px] h-[2px] bg-purple absolute bottom-[-2px] left-[-3px]" />
     </div>
@@ -43,7 +43,7 @@ const Experience = ({ experience, className }) => (
               href={experience.companyUrl}
               target="_blank"
               rel="noreferrer"
-              className="bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-bold border-b-2 border-purple hover:text-purple"
+              className="bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-bold border-b-2 border-purple hover:text-purple print:text-purple"
             >
               {experience.company}
             </a>
