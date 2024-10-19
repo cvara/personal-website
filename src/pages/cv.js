@@ -95,7 +95,9 @@ const positions = [
   },
 ];
 
-const Resume = () => (
+const projects = [];
+
+const CV = () => (
   <Layout>
     <div className="max-w-[680px] m-auto p-4">
       <div className="flex gap-4 items-center mb-12">
@@ -149,6 +151,6 @@ const Resume = () => (
   </Layout>
 );
 
-export const Head = () => <Seo title="Resume" />;
+export const Head = () => <Seo title="CV" />;
 
-export default Resume;
+export default CV;
