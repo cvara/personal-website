@@ -36,7 +36,7 @@ const Experience = ({ experience, className }) => (
     <div className="flex gap-2 items-center mb-2 max-md:flex-col max-md:items-start max-md:gap-1">
       <div className="text-lg font-bold">{experience.title}</div>
       <span className="max-md:hidden">&middot;</span>
-      <div className="flex gap-2 items center max-md:mb-2">
+      <div className="flex gap-2 items-center max-md:mb-2">
         <div className="text-md">
           {experience.companyUrl ? (
             <a
