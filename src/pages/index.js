@@ -1,5 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -42,7 +43,9 @@ const IndexPage = () => (
               target="_blank"
               rel="noreferrer"
             >
-              <Button className="w-40">View CV</Button>
+              <Link to="/cv">
+                <Button className="w-40">View CV</Button>
+              </Link>
             </a>
           </div>
           <div className="flex gap-4 ">

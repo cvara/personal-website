@@ -8,6 +8,9 @@ import ResumeExperience from "../components/resume/experience";
 import ResumeProject from "../components/resume/project";
 import ResumeTitle from "../components/resume/title";
 
+import GithubIcon from "../svg/github.svg";
+import LinkedinIcon from "../svg/linkedin.svg";
+
 const positions = [
   {
     title: "Senior Front-end Engineer",
@@ -130,8 +133,32 @@ const CV = () => (
           />
         </div>
         <div>
-          <div className="text-3xl font-bold">Christoforos Varakliotis</div>
-          <div className="text-xl">Web Engineer</div>
+          <div className="text-3xl font-bold mb-1">
+            Christoforos Varakliotis
+          </div>
+          <div className="text-xl mb-1 flex gap-2 items-center">
+            Web Engineer
+            <a
+              href="https://github.com/cvara"
+              target="_blank"
+              rel="noreferrer"
+              title="GitHub"
+            >
+              <GithubIcon width={20} height="auto" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/christoforosvarakliotis/"
+              target="_blank"
+              rel="noreferrer"
+              title="LinkedIn"
+            >
+              <LinkedinIcon width={20} height="auto" />
+            </a>
+          </div>
+          {/* <div className="flex gap-2">
+            <GithubIcon width={20} height="auto" />
+            <LinkedinIcon width={20} height="auto" />
+          </div> */}
         </div>
       </div>
 
