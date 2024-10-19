@@ -79,6 +79,15 @@ const positions = [
     description: `Science POD is a web application that facilitates the collaborative process of translating scientific articles into accessible prose. I designed and implemented its front-end and UI/UX. Notable parts of the application are its web-based editing tool with its diff checker, its job flow control tool and its order placement interface.`,
   },
   {
+    title: "Front-end Engineer",
+    occupation: "Contractor",
+    company: "Noowit",
+    start: "May 2013",
+    end: "Jul 2013",
+    technologies: "HTML5, CSS3, JavaScript",
+    description: `As an external contractor at the time, I created a rich WYSIWYG web based text editor allowing content authors to write and publish their articles on <a href="https://x.com/noowitmags" target="_blank">Noowit</a>, providing a multitude of editing and formatting options, as well as the ability to upload and modify media elements such as images, slide-shows, audio tracks and videos. The tool was released in July 2013 and has since been open sourced on <a href="https://github.com/cvara/typely" target="_blank">Github</a>.`,
+  },
+  {
     title: "Full-stack Engineer",
     occupation: "Co-Founder",
     company: "Noodio",
@@ -211,7 +220,8 @@ const CV = () => (
           <li className="mb-4 list-disc">
             Award & honor from the Greek National Foundation of Scholarships for
             ranking 1st amongst students of the Dept of Computer and
-            Communications Engineering, University of Thessaly, 2004 & 2005.
+            Communications Engineering, University of Thessaly, for two
+            consecutive years (2004 & 2005) .
           </li>
           <li className="list-disc">
             1st Award for Noodio in the Innovation & Entrepreneurship category
