@@ -14,7 +14,7 @@ const propTypes = {
 const SkillGauge = ({ idx, level }) => (
   <div
     className={clsx(
-      "basis-1/4 h-2 first-of-type:rounded-l last-of-type:rounded-r",
+      "basis-1/4 h-[5px] first-of-type:rounded-l last-of-type:rounded-r",
       {
         "bg-gradient-to-tr from-purple to-purple": level >= idx,
         "bg-gray opacity-25": level < idx,
