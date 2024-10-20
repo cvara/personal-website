@@ -233,6 +233,72 @@ const CV = () => (
         <Skills skills={skills} />
       </div>
 
+      <div className="mb-12">
+        <ResumeTitle className="text-2xl mb-8">Tech Skills</ResumeTitle>
+        <div className="mb-4">
+          <div className="text-lg font-bold mb-2">
+            Web Development (Front-End Focus)
+          </div>
+          <ul className="marker:text-purple list-disc ml-5">
+            <li>
+              <strong>Languages:</strong> Javascript, Typescript, HTML5, CSS3,
+              Java Servlets/JSP, Groovy/Grails
+            </li>
+            <li>
+              <strong>Frameworks & Libraries:</strong> React, Next.js, Redux,
+              RxJS, Backbone, Marionette, Express
+            </li>
+            <li>
+              <strong>CSS Preprocessors & Tools:</strong> Less, Sass, Webpack,
+              Gulp, Grunt
+            </li>
+            <li>
+              <strong>Technologies:</strong> Node.js, REST, GraphQL, Socket.io,
+              Web Workers, Service Workers, Progressive Web Apps (PWAs)
+            </li>
+          </ul>
+        </div>
+        <div className="mb-4">
+          <div className="text-lg font-bold mb-2">Testing & Automation</div>
+          <ul className="marker:text-purple list-disc ml-5">
+            <li>
+              Jest, Cypress, React Testing Library, Karma, Mocha, Chai, Sinon,
+              Istanbul
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div className="mb-4">
+            <div className="text-lg font-bold mb-2">Databases</div>
+            <ul className="marker:text-purple list-disc ml-5">
+              <li>MySQL, PostgreSQL, MongoDB, Couchbase</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div className="mb-4">
+            <div className="text-lg font-bold mb-2">General Programming</div>
+            <ul className="marker:text-purple list-disc ml-5">
+              <li>
+                <strong>Languages:</strong>C, Java, Groovy, Perl, PHP, VBA, MIPS
+                Assembly, VHDL
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div className="mb-4">
+            <div className="text-lg font-bold mb-2">
+              DevOps & Version Control
+            </div>
+            <ul className="marker:text-purple list-disc ml-5">
+              <li>
+                <strong>Tools:</strong> Git, Docker
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div>
         <ResumeTitle className="text-2xl mb-8">Honors & Awards</ResumeTitle>
         <ul className="marker:text-purple ml-4">
