@@ -1,8 +1,0 @@
-.description {
-  a {
-    @apply decoration-from-font underline text-purple;
-    &:hover {
-      @apply decoration-from-font underline text-purple opacity-90;
-    }
-  }
-}

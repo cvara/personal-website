@@ -1,7 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
-import * as styles from "./project.module.css";
 import GithubIcon from "../../svg/github.svg";
 import clsx from "clsx";
 

@@ -10,6 +10,7 @@ import ResumeTitle from "../components/resume/title";
 
 import GithubIcon from "../svg/github.svg";
 import LinkedinIcon from "../svg/linkedin.svg";
+import Skills from "../components/resume/skills";
 
 const positions = [
   {
@@ -126,6 +127,17 @@ const projects = [
   },
 ];
 
+const skills = [
+  { title: "Javascript", level: 10 },
+  { title: "HTML5 & CSS3", level: 9 },
+  { title: "Typescript", level: 8 },
+  { title: "React", level: 9 },
+  { title: "Node.js", level: 7 },
+  { title: "MySQL & PostgreSQL", level: 5 },
+  { title: "Git", level: 8 },
+  { title: "Docker", level: 3 },
+];
+
 const CV = () => (
   <Layout>
     <div className="max-w-[680px] m-auto p-4">
@@ -212,6 +224,13 @@ const CV = () => (
             <ResumeProject key={idx} project={project} />
           ))}
         </div>
+      </div>
+
+      <div className="mb-12">
+        <ResumeTitle className="text-2xl mb-8">
+          Tech Skills Overview
+        </ResumeTitle>
+        <Skills skills={skills} />
       </div>
 
       <div>
