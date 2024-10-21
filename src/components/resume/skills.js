@@ -28,16 +28,16 @@ const Skills = ({ skills, className }) => {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 mb-8">
+      <div className="grid grid-cols-[auto_1fr] gap-4 mb-8">
         {coreSkills.map(skill => (
-          <div key={skill.title}>
-            <div className="font-bold mb-1">{skill.title}</div>
-            <div className="flex gap-[2px]">
+          <React.Fragment key={skill.title}>
+            <div className="font-bold text-right text-sm">{skill.title}</div>
+            <div className="flex gap-[1px] items-center min-w-0">
               {new Array(10).fill(null).map((v, idx) => (
                 <SkillGauge idx={idx + 1} level={skill.level} key={idx} />
               ))}
             </div>
-          </div>
+          </React.Fragment>
         ))}
       </div>
     </div>

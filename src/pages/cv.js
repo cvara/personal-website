@@ -129,13 +129,11 @@ const projects = [
 
 const skills = [
   { title: "Javascript", level: 10 },
-  { title: "HTML5 & CSS3", level: 9 },
-  { title: "Typescript", level: 8 },
+  { title: "HTML5 & CSS3", level: 10 },
+  { title: "Typescript", level: 9 },
   { title: "React", level: 9 },
+  { title: "Next.js", level: 8 },
   { title: "Node.js", level: 7 },
-  { title: "MySQL & PostgreSQL", level: 5 },
-  { title: "Git", level: 8 },
-  { title: "Docker", level: 3 },
 ];
 
 const CV = () => (
@@ -154,7 +152,7 @@ const CV = () => (
           />
         </div>
         <div>
-          <div className="text-3xl font-bold mb-1">
+          <div className="text-2xl sm:text-3xl font-bold mb-1">
             Christoforos Varakliotis
           </div>
           <div className="text-xl mb-1 flex gap-2 items-center">
@@ -176,10 +174,6 @@ const CV = () => (
               <LinkedinIcon width={20} height="auto" />
             </a>
           </div>
-          {/* <div className="flex gap-2">
-            <GithubIcon width={20} height="auto" />
-            <LinkedinIcon width={20} height="auto" />
-          </div> */}
         </div>
       </div>
 
@@ -207,7 +201,7 @@ const CV = () => (
       </div>
 
       <div className="mb-16">
-        <ResumeTitle className="text-2xl mb-8">The Road So Far</ResumeTitle>
+        <ResumeTitle className="text-2xl mb-6">The Road So Far</ResumeTitle>
         <div className="flex flex-col">
           {positions.map((position, idx) => (
             <ResumeExperience key={idx} experience={position} />
@@ -216,7 +210,7 @@ const CV = () => (
       </div>
 
       <div className="mb-12">
-        <ResumeTitle className="text-2xl mb-8">
+        <ResumeTitle className="text-2xl mb-6">
           Featured Hobby Projects
         </ResumeTitle>
         <div className="flex flex-col">
@@ -227,90 +221,79 @@ const CV = () => (
       </div>
 
       <div className="mb-12">
-        <ResumeTitle className="text-2xl mb-8">
-          Tech Skills Overview
+        <ResumeTitle className="text-2xl mb-6">
+          Featured Tech Skills
         </ResumeTitle>
         <Skills skills={skills} />
       </div>
 
       <div className="mb-12">
-        <ResumeTitle className="text-2xl mb-8">Tech Skills</ResumeTitle>
-        <div className="mb-4">
-          <div className="text-lg font-bold mb-2">
-            Web Development (Front-End Focus)
-          </div>
-          <ul className="marker:text-purple list-disc ml-5">
-            <li>
-              <strong>Languages:</strong> Javascript, Typescript, HTML5, CSS3,
-              Java Servlets/JSP, Groovy/Grails
-            </li>
-            <li>
-              <strong>Frameworks & Libraries:</strong> React, Next.js, Redux,
-              RxJS, Backbone, Marionette, Express
-            </li>
-            <li>
-              <strong>CSS Preprocessors & Tools:</strong> Less, Sass, Webpack,
-              Gulp, Grunt
-            </li>
-            <li>
-              <strong>Technologies:</strong> Node.js, REST, GraphQL, Socket.io,
-              Web Workers, Service Workers, Progressive Web Apps (PWAs)
-            </li>
-          </ul>
-        </div>
-        <div className="mb-4">
-          <div className="text-lg font-bold mb-2">Testing & Automation</div>
-          <ul className="marker:text-purple list-disc ml-5">
-            <li>
-              Jest, Cypress, React Testing Library, Karma, Mocha, Chai, Sinon,
-              Istanbul
-            </li>
-          </ul>
-        </div>
-        <div>
-          <div className="mb-4">
-            <div className="text-lg font-bold mb-2">Databases</div>
-            <ul className="marker:text-purple list-disc ml-5">
-              <li>MySQL, PostgreSQL, MongoDB, Couchbase</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div className="mb-4">
-            <div className="text-lg font-bold mb-2">General Programming</div>
-            <ul className="marker:text-purple list-disc ml-5">
-              <li>
-                <strong>Languages:</strong>C, Java, Groovy, Perl, PHP, VBA, MIPS
-                Assembly, VHDL
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div className="mb-4">
-            <div className="text-lg font-bold mb-2">
-              DevOps & Version Control
+        <ResumeTitle className="text-2xl mb-6">
+          Tech Skills Overview
+        </ResumeTitle>
+
+        <div className="mb-8">
+          <div className="text-lg font-bold mb-2">Web Development</div>
+          <div className="flex flex-col gap-3 text-sm ml-0">
+            <div>
+              <strong className="text-navy">Languages:</strong> Javascript,
+              Typescript, HTML5, CSS3, Java Servlets/JSP, Groovy/Grails
             </div>
-            <ul className="marker:text-purple list-disc ml-5">
-              <li>
-                <strong>Tools:</strong> Git, Docker
-              </li>
-            </ul>
+            <div>
+              <strong className="text-navy">Frameworks & Libraries:</strong>{" "}
+              React, Next.js, Redux, RxJS, Backbone, Marionette, Express
+            </div>
+            <div>
+              <strong className="text-navy">CSS Preprocessors & Tools:</strong>{" "}
+              Less, Sass, Webpack, Gulp, Grunt
+            </div>
+            <div>
+              <strong className="text-navy">Technologies:</strong> Node.js,
+              REST, GraphQL, Socket.io, Web Workers, Service Workers, PWA
+            </div>
           </div>
+        </div>
+
+        <div className="mb-8">
+          <div className="text-lg font-bold mb-2">Testing & Automation</div>
+          <div className="text-sm ml-0">
+            Jest, Cypress, React Testing Library, Karma, Mocha, Chai, Sinon,
+            Istanbul
+          </div>
+        </div>
+
+        <div className="mb-8">
+          <div className="text-lg font-bold mb-2">Databases</div>
+          <div className="text-sm ml-0">
+            MySQL, PostgreSQL, MongoDB, Couchbase, RxDB, PouchDB
+          </div>
+        </div>
+
+        <div className="mb-8">
+          <div className="text-lg font-bold mb-2">General Programming</div>
+          <div className="text-sm ml-0">
+            C, Java, Groovy, Perl, PHP, VBA, MIPS Assembly, VHDL
+          </div>
+        </div>
+
+        <div className="mb-8">
+          <div className="text-lg font-bold mb-2">DevOps & Version Control</div>
+          <div className="text-sm ml-0">Git, Docker</div>
         </div>
       </div>
+
       <div>
-        <ResumeTitle className="text-2xl mb-8">Honors & Awards</ResumeTitle>
+        <ResumeTitle className="text-2xl mb-6">Honors & Awards</ResumeTitle>
         <ul className="marker:text-purple ml-4">
           <li className="mb-4 list-disc">
             Award & honor from the Greek National Foundation of Scholarships for
             ranking 1st amongst students of the Dept of Computer and
             Communications Engineering, University of Thessaly, for two
-            consecutive years (2004 & 2005) .
+            consecutive years (2004 & 2005)
           </li>
           <li className="list-disc">
             1st Award for Noodio in the Innovation & Entrepreneurship category
-            at the 2015 Ennovation competition.
+            at the 2015 Ennovation competition
           </li>
         </ul>
       </div>

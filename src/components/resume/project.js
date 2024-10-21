@@ -27,7 +27,7 @@ const Project = ({ project, className }) => {
           <GithubIcon height="auto" width={20} />
         </a>
       </div>
-      <div>{project.description}</div>
+      <div className="text-sm">{project.description}</div>
     </div>
   );
 };
