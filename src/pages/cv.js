@@ -237,15 +237,15 @@ const CV = () => (
           <div className="flex flex-col gap-3 text-sm ml-0">
             <div>
               <strong className="text-navy">Languages:</strong> Javascript,
-              Typescript, HTML5, CSS3, Java Servlets/JSP, Groovy/Grails
+              Typescript, HTML5, CSS3, Java (Servlets/JSP), Groovy
             </div>
             <div>
               <strong className="text-navy">Frameworks & Libraries:</strong>{" "}
-              React, Next.js, Redux, RxJS, Backbone, Marionette, Express
+              React, Next.js, Redux, RxJS, Backbone, Marionette, Express, Grails
             </div>
             <div>
               <strong className="text-navy">CSS Preprocessors & Tools:</strong>{" "}
-              Less, Sass, Webpack, Gulp, Grunt
+              Tailwind, Less, Sass, Webpack, Rollup, Gulp, Grunt
             </div>
             <div>
               <strong className="text-navy">Technologies:</strong> Node.js,
@@ -272,7 +272,7 @@ const CV = () => (
         <div className="mb-8">
           <div className="text-lg font-bold mb-2">General Programming</div>
           <div className="text-sm ml-0">
-            C, Java, Groovy, Perl, PHP, VBA, MIPS Assembly, VHDL
+            C, Java, Javascript, Groovy, Perl, PHP, VBA, MIPS Assembly, VHDL
           </div>
         </div>
 
