@@ -25,7 +25,7 @@ const IndexPage = () => (
           />
         </div>
         <div className="flex flex-col items-center">
-          <div className="text-subtitleSm md:text-subtitle mb-1 text-navy">
+          <div className="text-subtitleSm md:text-subtitle mb-2 md:mb-2 text-navy">
             Hi there, I am{" "}
           </div>
           <div className="text-titleSm md:text-title mb-3 text-navy">

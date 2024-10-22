@@ -31,7 +31,7 @@ const Skills = ({ skills, className }) => {
       <div className="grid grow grid-cols-[auto_minmax(0,_1fr)] max-w-[460px] gap-4 mb-8">
         {coreSkills.map(skill => (
           <React.Fragment key={skill.title}>
-            <div className="font-bold text-right text-sm">{skill.title}</div>
+            <div className="font-medium text-right text-sm">{skill.title}</div>
             <div className="flex gap-[1px] items-center min-w-0 max-w-[400px]">
               {new Array(10).fill(null).map((v, idx) => (
                 <SkillGauge idx={idx + 1} level={skill.level} key={idx} />

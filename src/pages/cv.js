@@ -152,10 +152,10 @@ const CV = () => (
           />
         </div>
         <div>
-          <div className="text-2xl sm:text-3xl font-bold mb-1">
+          <div className="text-2xl sm:text-3xl font-medium mb-1">
             Christoforos Varakliotis
           </div>
-          <div className="text-xl mb-1 flex gap-2 items-center">
+          <div className="text-xl mb-1 flex gap-2 items-center font-light">
             Web Engineer
             <a
               href="https://github.com/cvara"
@@ -177,8 +177,8 @@ const CV = () => (
         </div>
       </div>
 
-      <div className="mb-14 text-lg">
-        <p className="mb-3">
+      <div className="mb-14 font-light">
+        <p className="mb-3 text-lg font-normal">
           A full stack web engineer showing a particular interest in the
           front-end technologies and a co-founder of a web-based startup, I have
           been professionally involved with the web ecosystem since 2011.
@@ -233,58 +233,69 @@ const CV = () => (
         </ResumeTitle>
 
         <div className="mb-8">
-          <div className="text-lg font-bold mb-2">Web Development</div>
-          <div className="flex flex-col gap-3 text-sm ml-0">
-            <div>
-              <strong className="text-navy">Languages:</strong> Javascript,
-              Typescript, HTML5, CSS3, Java (Servlets/JSP), Groovy
+          <div className="text-lg font-medium mb-2">Web Development</div>
+          <div className="flex flex-col gap-2 text-sm ml-0">
+            <div className="font-light">
+              <strong className="text-navy font-medium">
+                Languages &middot;
+              </strong>{" "}
+              Javascript, Typescript, HTML5, CSS3, Java (Servlets/JSP), Groovy
             </div>
-            <div>
-              <strong className="text-navy">Frameworks & Libraries:</strong>{" "}
+            <div className="font-light">
+              <strong className="text-navy font-medium">
+                Frameworks & Libraries &middot;
+              </strong>{" "}
               React, Next.js, Redux, RxJS, Backbone, Marionette, Express, Grails
             </div>
-            <div>
-              <strong className="text-navy">CSS Preprocessors & Tools:</strong>{" "}
+            <div className="font-light">
+              <strong className="text-navy font-medium">
+                CSS Preprocessors & Tools &middot;
+              </strong>{" "}
               Tailwind, Less, Sass, Webpack, Rollup, Gulp, Grunt
             </div>
-            <div>
-              <strong className="text-navy">Technologies:</strong> Node.js,
-              REST, GraphQL, Socket.io, Web Workers, Service Workers, PWA
+            <div className="font-light">
+              <strong className="text-navy font-medium">
+                Technologies &middot;
+              </strong>{" "}
+              Node.js, REST, GraphQL, Socket.io, Web Workers, Service Workers,
+              PWA
             </div>
           </div>
         </div>
 
         <div className="mb-8">
-          <div className="text-lg font-bold mb-2">Testing & Automation</div>
-          <div className="text-sm ml-0">
+          <div className="text-lg font-medium mb-2">Testing & Automation</div>
+          <div className="text-sm ml-0 font-light">
             Jest, Cypress, React Testing Library, Karma, Mocha, Chai, Sinon,
             Istanbul
           </div>
         </div>
 
         <div className="mb-8">
-          <div className="text-lg font-bold mb-2">Databases</div>
-          <div className="text-sm ml-0">
+          <div className="text-lg font-medium mb-2">Databases</div>
+          <div className="text-sm ml-0 font-light">
             MySQL, PostgreSQL, MongoDB, Couchbase, RxDB, PouchDB
           </div>
         </div>
 
         <div className="mb-8">
-          <div className="text-lg font-bold mb-2">General Programming</div>
-          <div className="text-sm ml-0">
+          <div className="text-lg font-medium mb-2">General Programming</div>
+          <div className="text-sm ml-0 font-light">
             C, Java, Javascript, Groovy, Perl, PHP, VBA, MIPS Assembly, VHDL
           </div>
         </div>
 
         <div className="mb-8">
-          <div className="text-lg font-bold mb-2">DevOps & Version Control</div>
-          <div className="text-sm ml-0">Git, Docker</div>
+          <div className="text-lg font-medium mb-2">
+            DevOps & Version Control
+          </div>
+          <div className="text-sm ml-0 font-light">Git, Docker</div>
         </div>
       </div>
 
       <div>
         <ResumeTitle className="text-2xl mb-6">Honors & Awards</ResumeTitle>
-        <ul className="marker:text-purple ml-4">
+        <ul className="marker:text-purple ml-4 font-light">
           <li className="mb-4 list-disc">
             Award & honor from the Greek National Foundation of Scholarships for
             ranking 1st amongst students of the Dept of Computer and

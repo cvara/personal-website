@@ -52,7 +52,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; /* Text color will show gradient */
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .button:hover span {

@@ -16,7 +16,7 @@ const propTypes = {
 const Project = ({ project, className }) => {
   return (
     <div className="mb-6 last-of-type:mb-0">
-      <div className="text-lg font-bold mb-1 flex gap-2 items-center">
+      <div className="text-lg font-medium mb-1 flex gap-2 items-center">
         {project.title}
         <a
           href={project.url}
@@ -27,7 +27,7 @@ const Project = ({ project, className }) => {
           <GithubIcon height="auto" width={20} />
         </a>
       </div>
-      <div className="text-sm">{project.description}</div>
+      <div className="text-sm font-light">{project.description}</div>
     </div>
   );
 };

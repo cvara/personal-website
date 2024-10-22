@@ -28,7 +28,7 @@ module.exports = {
     extend: {
       fontSize: {
         title: [
-          "48px",
+          "46px",
           {
             lineHeight: "1.2",
             // letterSpacing: '-0.01em',
@@ -36,7 +36,7 @@ module.exports = {
           },
         ],
         titleSm: [
-          "36px",
+          "34px",
           {
             lineHeight: "1.2",
             // letterSpacing: '-0.01em',
@@ -48,7 +48,7 @@ module.exports = {
           {
             lineHeight: "1.2",
             // letterSpacing: '-0.02em',
-            fontWeight: "300",
+            fontWeight: "200",
           },
         ],
         subtitleSm: [
@@ -56,7 +56,7 @@ module.exports = {
           {
             lineHeight: "1.2",
             // letterSpacing: '-0.02em',
-            fontWeight: "300",
+            fontWeight: "200",
           },
         ],
         fine: [
@@ -65,6 +65,12 @@ module.exports = {
             lineHeight: "20px",
             // letterSpacing: '-0.02em',
             fontWeight: "300",
+          },
+        ],
+        sm: [
+          "0.875rem",
+          {
+            lineHeight: "1.45rem",
           },
         ],
       },
