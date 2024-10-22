@@ -18,64 +18,89 @@ const propTypes = {
   className: PropTypes.string,
 };
 
-const Experience = ({ experience, className }) => (
-  <div
-    className={clsx(
-      className,
-      "group [&:not(:last-child)]:pb-10 relative pl-4 ml-2 print:pl-0",
-    )}
-  >
-    <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-purple print:hidden">
-      <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-t from-purple to-purple absolute top-[-6px] left-[-5px]" />
-      <div className="w-[8px] h-[2px] bg-purple absolute bottom-[-2px] left-[-3px]" />
-    </div>
-    <div className="text-xs bg-gradient-to-tr from-purple to-purple bg-clip-text text-transparent font-bold mb-2">
-      {experience.start} - {experience.end}
-    </div>
+const highlightDiploma = description => {
+  const regex = /Polytechnic Diploma/gi;
 
-    <div className="flex gap-2 items-center mb-2 max-md:flex-col max-md:items-start max-md:gap-1">
-      <div className="text-lg font-bold">{experience.title}</div>
-      <span className="max-md:hidden">&middot;</span>
-      <div className="flex gap-2 items-center max-md:mb-2">
-        <div className="text-md">
-          {experience.companyUrl ? (
-            <a
-              href={experience.companyUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-bold border-b-2 border-purple hover:text-purple print:text-purple"
-            >
-              {experience.company}
-            </a>
-          ) : (
-            <div className="bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-bold">
-              {experience.company}
-            </div>
+  const processedDescription = description.replace(regex, match => {
+    return `
+      <div class="relative inline-block group">
+        <div class="text-gray-dark underline hover:underline hover:text-purple cursor-help print:no-underline">
+          ${match}
+        </div>
+        <div class="absolute bottom-full left-0 mb-2 hidden group-hover:inline-block bg-gradient-to-tr from-purple to-teal text-white text-xs rounded py-2 px-2 z-10 text w-[50vw] max-w-[360px] shadow shadow-navy">
+          Degree equivalent to Bachelor and Master based on total number of ECTS credits that correspond to five (5) academic years
+        </div>
+      </div>`;
+  });
+
+  return processedDescription;
+};
+
+const Experience = ({ experience, className }) => {
+  return (
+    <div
+      className={clsx(
+        className,
+        "[&:not(:last-child)]:pb-10 relative pl-4 ml-2 print:pl-0",
+      )}
+    >
+      <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-purple print:hidden">
+        <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-t from-purple to-purple absolute top-[-6px] left-[-5px]" />
+        <div className="w-[8px] h-[2px] bg-purple absolute bottom-[-2px] left-[-3px]" />
+      </div>
+      <div className="text-xs bg-gradient-to-tr from-purple to-purple bg-clip-text text-transparent font-bold mb-2">
+        {experience.start} - {experience.end}
+      </div>
+
+      <div className="flex gap-2 items-center mb-2 max-md:flex-col max-md:items-start max-md:gap-1">
+        <div className="text-lg font-bold">{experience.title}</div>
+        <span className="max-md:hidden">&middot;</span>
+        <div className="flex gap-2 items-center max-md:mb-2">
+          <div className="text-md">
+            {experience.companyUrl ? (
+              <a
+                href={experience.companyUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-bold border-b-2 border-purple hover:text-purple print:text-purple"
+              >
+                {experience.company}
+              </a>
+            ) : (
+              <div className="bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-bold">
+                {experience.company}
+              </div>
+            )}
+          </div>
+          {experience.occupation && (
+            <>
+              &middot;
+              <div className="text-sm text-gray-dark">
+                {experience.occupation}
+              </div>
+            </>
           )}
         </div>
-        {experience.occupation && (
-          <>
-            &middot;
-            <div className="text-sm text-gray-dark">
-              {experience.occupation}
-            </div>
-          </>
-        )}
       </div>
+
+      <div
+        dangerouslySetInnerHTML={{
+          __html: experience.description,
+        }}
+        className={clsx(styles.description)}
+      />
+
+      {experience.technologies && (
+        <div
+          className="mt-4 text-sm text-gray-dark"
+          dangerouslySetInnerHTML={{
+            __html: highlightDiploma(experience.technologies),
+          }}
+        />
+      )}
     </div>
-
-    <div
-      dangerouslySetInnerHTML={{ __html: experience.description }}
-      className={clsx(styles.description)}
-    />
-
-    {experience.technologies && (
-      <div className="mt-4 text-sm text-gray-dark">
-        {experience.technologies}
-      </div>
-    )}
-  </div>
-);
+  );
+};
 
 Experience.propTypes = propTypes;
 
