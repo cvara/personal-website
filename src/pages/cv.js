@@ -152,10 +152,10 @@ const CV = () => (
           />
         </div>
         <div>
-          <div className="text-2xl sm:text-3xl font-medium mb-1">
+          <div className="text-xl sm:text-2xl md:text-3xl font-semibold md:font-medium mb-1">
             Christoforos Varakliotis
           </div>
-          <div className="text-xl mb-1 flex gap-2 items-center font-light">
+          <div className="text-lg sm:text-xl mb-1 flex gap-2 items-center font-light">
             Web Engineer
             <a
               href="https://github.com/cvara"
