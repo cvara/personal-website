@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       <div className="flex flex-col grow shrink basis-1/2 h-0 p-2 md:p-4">
         {children}
       </div>
-      <footer className="grow-0 shrink-0 flex-col flex items-center">
+      <footer className="grow-0 shrink-0 flex-col flex items-center print:hidden">
         <div className="inline-flex gap-1 text-purple font-medium opacity-100 text-[12px] px-2 py-4">
           <div>© {new Date().getFullYear()} </div>&middot;{" "}
           <span className="bg-gradient-to-r from-purple to-teal bg-clip-text text-transparent">

@@ -153,7 +153,7 @@ const CV = () => (
         back
       </Link>
       <div className="flex gap-4 items-center mb-12">
-        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[112px]">
+        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[112px] print:p-0">
           <StaticImage
             src="../images/profile_pic.jpg"
             loading="eager"
@@ -161,7 +161,7 @@ const CV = () => (
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="profile pic"
-            className="rounded-full overflow-clip"
+            className="rounded-full overflow-clip print:border-[3px] print:border-purple"
           />
         </div>
         <div>
@@ -185,6 +185,21 @@ const CV = () => (
               title="LinkedIn"
             >
               <LinkedinIcon width={20} height="auto" />
+            </a>
+          </div>
+          <div className="hidden print:flex gap-2 text-purple">
+            <a
+              className="text-sm font decoration-2 decoration-dashed decoration-purple/80 underline text-purple hover:decoration-purple hover:decoration-dashed hover:decoration-2 hover:underline hover:text-purple"
+              href="mailto:c.varakliotis@gmail.com"
+            >
+              c.varakliotis@gmail.com
+            </a>
+            &middot;
+            <a
+              className="text-sm font decoration-2 decoration-dashed decoration-purple/80 underline text-purple hover:decoration-purple hover:decoration-dashed hover:decoration-2 hover:underline hover:text-purple"
+              href="https://christoforos.me"
+            >
+              christoforos.me
             </a>
           </div>
         </div>
@@ -231,7 +246,7 @@ const CV = () => (
         </div>
       </div>
 
-      <div className="mb-12">
+      <div className="mb-12 print:hidden">
         <ResumeTitle>Featured Tech Skills</ResumeTitle>
         <Skills skills={skills} />
       </div>
