@@ -22,7 +22,7 @@ const positions = [
     end: "Jan 2024",
     technologies:
       "JavaScript (ES2015+), Typescript, React, Next.js, Webpack, Node.js, HTML5, CSS3, et al",
-    description: `I joined the Product Innovation & Excellence team at Frontiers and worked towards reimagining the Research Topic pages. A sample of my work can be seen via the <a href="https://www.frontiersin.org/research-topics/13377/coronavirus-disease-covid-19-pathophysiology-epidemiology-clinical-management-and-public-health-response/magazine" target="_blank">Covid-19 Research Topic</a> page.`,
+    description: `Joined the <strong>Product Innovation & Excellence</strong> team to reimagine Research Topic pages, with a sample available on the <a href="https://www.frontiersin.org/research-topics/13377/coronavirus-disease-covid-19-pathophysiology-epidemiology-clinical-management-and-public-health-response/magazine" target="_blank">Covid-19 Research Topic</a> page.`,
   },
   {
     title: "Senior Front-end Engineer",
@@ -33,7 +33,7 @@ const positions = [
     end: "Oct 2022",
     technologies:
       "JavaScript (ES2015+), Typescript, React, Redux, Webpack, Node.js, HTML5, CSS3, et al",
-    description: `Taking a short break from working in the academic publishing industry, I joined the Applicant Tracking System team at Workable.`,
+    description: `Contributed to the <strong>Applicant Tracking System</strong> team, briefly stepping away from the academic publishing industry.`,
   },
   {
     title: "Senior Front-end Engineer",
@@ -44,17 +44,17 @@ const positions = [
     end: "Jan 2022",
     technologies:
       "JavaScript (ES2015+), Typescript, React, Redux, RxDB, Socket.io, Webpack, Node.js, HTML5, CSS3, GraphQL, Docker, et al",
-    description: `I worked as the lead front-end engineer of the late Atypon Thessaloniki branch towards the production of a new AI-powered product called Scitrus.`,
+    description: `Led the front-end development for Atypon’s Thessaloniki branch, focusing on the creation of <strong>Scitrus</strong>, an AI-powered product for personalized scientific content.`,
   },
   {
-    title: "Senior Front-end Engineer",
+    title: "Front-end Engineer",
     occupation: "Full Time",
     company: "Noowit Editions",
     start: "Jan 2015",
     end: "Dec 2016",
     technologies:
       "JavaScript, Backbone, Marionette, Webpack, Gulp, Node.js, HTML5, CSS3/LESS, et al",
-    description: `Noowit was a smart publication platform for easily creating and disseminating intelligent, personalized editions with aggregated or original content. I joined the team in 2015, and was responsible for engineering its UI, crafting its layout and theme engines and building the front end of its publishing tool: a web based platform allowing content creators to publish digital magazines with their original content.`,
+    description: `Engineered the front-end of Noowit’s <strong>smart publication platform</strong> and developed its layout and theme engines. Built the UI for the publishing tool that enabled content creators to publish digital magazines.`,
   },
   {
     title: "Front-end Engineer",
@@ -66,7 +66,7 @@ const positions = [
     end: "Nov 2015",
     technologies:
       "JavaScript, Backbone, Marionette, Leaflet, Webpack, Gulp, HTML5, CSS3/LESS, et al",
-    description: `HOREA (“Hellenic Observatory of Regional Economic Analysis”) is a Web GIS created in collaboration with the Department of Planning and Regional Development of the University of Thessaly. As the front-end engineer of the project I designed and implemented the UI/UX of the application, including the front end of the GIS and its decision making platform.`,
+    description: `Designed and implemented the UI/UX of HOREA, a <strong>Web GIS</strong> in collaboration with the <strong>University of Thessaly</strong>, including its decision-making platform and front-end for GIS functionalities.`,
   },
   {
     title: "Front-end Engineer",
@@ -77,16 +77,17 @@ const positions = [
     end: "Aug 2016",
     technologies:
       "JavaScript, Backbone, Marionette, Require.js, Grunt, Node.js, HTML5, CSS3/LESS, et al",
-    description: `Science POD is a web application that facilitates the collaborative process of translating scientific articles into accessible prose. I designed and implemented its front-end and UI/UX. Notable parts of the application are its web-based editing tool with its diff checker, its job flow control tool and its order placement interface.`,
+    description: `Designed and built the front-end and UI/UX for Science POD, including its <strong>web-based editing tool</strong>, diff checker, job flow control, and order placement interface.`,
   },
   {
     title: "Front-end Engineer",
     occupation: "Contractor",
     company: "Noowit",
+    companyUrl: "https://x.com/noowitmags",
     start: "May 2013",
     end: "Jul 2013",
     technologies: "HTML5, CSS3, JavaScript",
-    description: `As an external contractor at the time, I created a rich WYSIWYG web based text editor allowing content authors to write and publish their articles on <a href="https://x.com/noowitmags" target="_blank">Noowit</a>, providing a multitude of editing and formatting options, as well as the ability to upload and modify media elements such as images, slide-shows, audio tracks and videos. The tool was released in July 2013 and has since been open sourced on <a href="https://github.com/cvara/typely" target="_blank">Github</a>.`,
+    description: `Developed a <strong>rich WYSIWYG editor</strong> for content authors, allowing them to write and publish articles with advanced editing and media management features. The tool was open-sourced on <a href="https://github.com/cvara/typely" target="_blank">Github</a>.`,
   },
   {
     title: "Full-stack Engineer",
@@ -96,7 +97,7 @@ const positions = [
     end: "Dec 2018",
     technologies:
       "JavaScript, Backbone, Marionette, Require.js, Grunt, Node.js, HTML5, CSS3/LESS, Java, Groovy, Grails, MySQL, MongoDB, et al",
-    description: `Noodio was an award-winning four-member web startup offering targeted promotion for musicians on a local level. I authored the first version of its back-end and was responsible for re-designing, building, testing and optimizing its front-end and UX later on. The community based filtering algorithm at the core of Noodio was also part of my diploma thesis at the University of Thessaly. Having proudly won the <a href="https://acein.aueb.gr/en/ennovation-competition/" target="_blank">1st Award</a> in the Innovation & Entrepreneurship category at the 2015 <a href="https://acein.aueb.gr/en/ennovation-competition/" target="_blank">Ennovation</a> competition, Noodio reached the end of its life in December 2018.`,
+    description: `Co-founded Noodio, an <strong>award-winning startup</strong> offering targeted local promotion for musicians. I led the design, development, and optimization of the front-end and UX, and authored the back-end for its initial release. Noodio’s innovative business model and core idea earned the <a href="https://acein.aueb.gr/en/ennovation-competition/" target="_blank">1st prize</a> in the <strong>Innovation & Entrepreneurship</strong> category at the 2015 <a href="https://acein.aueb.gr/en/ennovation-competition/" target="_blank">Ennovation</a> competition. The community-based filtering algorithm at the heart of Noodio was also part of my diploma thesis at the University of Thessaly.`,
   },
   {
     title: "Student",
@@ -104,8 +105,8 @@ const positions = [
     start: "Sep 2004",
     end: "Sep 2010",
     technologies:
-      "Polytechnic Diploma in Computer & Communications Engineering (degree grade 7.9/10 - Very Good)",
-    description: `As part of my diploma thesis, I developed a web based application offering targeted content promotion based on a tailor-made community based filtering algorithm applied on publicly available musical content. The project later evolved into Noodio, a web based startup.`,
+      "Polytechnic Diploma in Computer & Communications Engineering (degree: 7.9/10 &middot; Very Good)",
+    description: `As part of my diploma thesis, I developed a web application for targeted content promotion using a custom-built <strong>community-based filtering algorithm</strong> for musical content. This project later evolved into <strong>Noodio</strong>, my startup.`,
   },
 ];
 
@@ -179,29 +180,29 @@ const CV = () => (
 
       <div className="mb-14 font-light">
         <p className="mb-3 text-lg font-normal">
-          A full stack web engineer showing a particular interest in the
-          front-end technologies and a co-founder of a web-based startup, I have
-          been professionally involved with the web ecosystem since 2011.
+          Full-stack web engineer with a strong focus on front-end technologies
+          and co-founder of a web-based startup, I’ve been professionally
+          immersed in the web ecosystem since 2011.
         </p>
         <p className="mb-3">
           My expertise lies in building and testing responsive user interfaces
-          and tackling algorithmic problems being mindful of efficiency and
-          performance. With a knack for design, I tend to get actively involved
-          in the user experience improvement process on the projects I work on.
+          while solving algorithmic challenges with a focus on efficiency and
+          performance. With a passion for design, I’m deeply involved in
+          improving user experiences across the projects I work on.
         </p>
         <p className="mb-3">
-          Always eager to learn and apply software design patterns in pursuit of
-          clean, idiomatic and maintainable code, I am passionate about all
-          things Javascript, open web standards and functional programming.
+          I am always eager to learn and apply software design patterns to write
+          clean, idiomatic, and maintainable code. I have a particular passion
+          for JavaScript, open web standards, and functional programming.
         </p>
         <p className="mb-3">
-          I got my Polytechnic Diploma in Computer & Communications Engineering
-          from the University of Thessaly in 2010.
+          I hold a Polytechnic Diploma in Computer & Communications Engineering
+          from the University of Thessaly, earned in 2010.
         </p>
       </div>
 
       <div className="mb-16">
-        <ResumeTitle className="text-2xl mb-6">The Road So Far</ResumeTitle>
+        <ResumeTitle>The Road So Far</ResumeTitle>
         <div className="flex flex-col">
           {positions.map((position, idx) => (
             <ResumeExperience key={idx} experience={position} />
@@ -210,9 +211,7 @@ const CV = () => (
       </div>
 
       <div className="mb-12">
-        <ResumeTitle className="text-2xl mb-6">
-          Featured Hobby Projects
-        </ResumeTitle>
+        <ResumeTitle>Featured Hobby Projects</ResumeTitle>
         <div className="flex flex-col">
           {projects.map((project, idx) => (
             <ResumeProject key={idx} project={project} />
@@ -221,17 +220,12 @@ const CV = () => (
       </div>
 
       <div className="mb-12">
-        <ResumeTitle className="text-2xl mb-6">
-          Featured Tech Skills
-        </ResumeTitle>
+        <ResumeTitle>Featured Tech Skills</ResumeTitle>
         <Skills skills={skills} />
       </div>
 
       <div className="mb-12">
-        <ResumeTitle className="text-2xl mb-6">
-          Tech Skills Overview
-        </ResumeTitle>
-
+        <ResumeTitle>Tech Skills Overview</ResumeTitle>
         <div className="mb-8">
           <div className="text-lg font-medium mb-2">Web Development</div>
           <div className="flex flex-col gap-2 text-sm ml-0">
@@ -294,19 +288,30 @@ const CV = () => (
       </div>
 
       <div>
-        <ResumeTitle className="text-2xl mb-6">Honors & Awards</ResumeTitle>
-        <ul className="marker:text-purple ml-4 font-light">
-          <li className="mb-4 list-disc">
-            Award & honor from the Greek National Foundation of Scholarships for
-            ranking 1st amongst students of the Dept of Computer and
-            Communications Engineering, University of Thessaly, for two
-            consecutive years (2004 & 2005)
-          </li>
-          <li className="list-disc">
-            1st Award for Noodio in the Innovation & Entrepreneurship category
-            at the 2015 Ennovation competition
-          </li>
-        </ul>
+        <ResumeTitle>Honors & Awards</ResumeTitle>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <div className="font-medium">
+              Scholarship from the Greek National Foundation of Scholarships
+            </div>
+            <div className="text-sm font-light">
+              Awarded for ranking 1st among students in the Department of
+              Computer & Communications Engineering at the University of
+              Thessaly for two consecutive academic years (2004 & 2005).
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <div className="font-medium">
+              1st Prize &middot; Ennovation 2015
+            </div>
+            <div className="text-sm font-light">
+              Noodio received 1st place in the Innovation & Entrepreneurship
+              category at the 2015 Ennovation competition, recognizing its
+              innovative business model and core idea.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>

@@ -16,7 +16,7 @@ const propTypes = {
 const Project = ({ project, className }) => {
   return (
     <div className="mb-6 last-of-type:mb-0">
-      <div className="text-lg font-medium mb-1 flex gap-2 items-center">
+      <div className="text-base font-medium mb-1 flex gap-2 items-center">
         {project.title}
         <a
           href={project.url}

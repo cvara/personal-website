@@ -62,7 +62,7 @@ const Experience = ({ experience, className }) => {
                 href={experience.companyUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-semibold border-b-[2px] border-dashed border-purple/25 hover:text-purple  hover:border-purple/60 print:text-purple"
+                className="text-sm bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-semibold border-b-[2px] border-dashed border-purple/50 hover:text-purple  hover:border-purple print:text-purple"
               >
                 {experience.company}
               </a>
