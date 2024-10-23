@@ -7,10 +7,11 @@ import Seo from "../components/seo";
 import ResumeExperience from "../components/resume/experience";
 import ResumeProject from "../components/resume/project";
 import ResumeTitle from "../components/resume/title";
+import Skills from "../components/resume/skills";
 
 import GithubIcon from "../svg/github.svg";
 import LinkedinIcon from "../svg/linkedin.svg";
-import Skills from "../components/resume/skills";
+import BackIcon from "../svg/back.svg";
 
 const positions = [
   {
@@ -139,7 +140,18 @@ const skills = [
 
 const CV = () => (
   <Layout>
-    <div className="max-w-[680px] m-auto p-4">
+    <div className="max-w-[680px] m-auto p-4 pt-2">
+      <Link
+        to="/"
+        className="text-sm inline-flex items-center gap-1  no-underline opacity-80 hover:opacity-100 mb-6 pr-2 print:hidden"
+      >
+        <BackIcon
+          width={12}
+          height="auto"
+          className="text-purple fill-purple"
+        />{" "}
+        back
+      </Link>
       <div className="flex gap-4 items-center mb-12">
         <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[112px]">
           <StaticImage
