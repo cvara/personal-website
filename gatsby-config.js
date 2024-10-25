@@ -52,8 +52,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-TGJH2KLM", // Replace with your GTM container ID
+        id: "GTM-TGJH2KLM",
         includeInDevelopment: false,
+      },
+    },
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        policy: [{ userAgent: "*", allow: "/", disallow: "/cv" }],
       },
     },
   ],
