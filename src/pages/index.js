@@ -17,11 +17,11 @@ const IndexPage = () => (
           <StaticImage
             src="../images/profile_pic.jpg"
             loading="eager"
-            layout="fullWidth"
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="profile pic"
             className="rounded-full overflow-clip"
+            width={140}
           />
         </div>
         <div className="flex flex-col items-center">
@@ -38,26 +38,27 @@ const IndexPage = () => (
             <a href="mailto:c.varakliotis@gmail.com">
               <Button className="w-40">Say hello</Button>
             </a>
-            <a
-              href="https://drive.google.com/file/d/1-ytAhgZsPYOdKfWjVBpM5ylwfdotjDkw/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Link to="/cv">
-                <Button className="w-40">View CV</Button>
-              </Link>
-            </a>
+
+            <Link to="/cv">
+              <Button className="w-40">View CV</Button>
+            </Link>
           </div>
           <div className="flex gap-4 ">
-            <a href="https://github.com/cvara" target="_blank" rel="noreferrer">
-              <GithubIcon width={32} height="auto" />
+            <a
+              href="https://github.com/cvara"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Github Profile"
+            >
+              <GithubIcon width={32} />
             </a>
             <a
               href="https://www.linkedin.com/in/christoforosvarakliotis/"
               target="_blank"
               rel="noreferrer"
+              aria-label="LinkedIn Profile"
             >
-              <LinkedinIcon width={32} height="auto" />
+              <LinkedinIcon width={32} />
             </a>
           </div>
         </div>
