@@ -25,13 +25,11 @@ const IndexPage = () => (
           />
         </div>
         <div className="flex flex-col items-center">
-          <div className="text-subtitleSm md:text-subtitle mb-2 md:mb-2 text-navy">
+          <div className="text-subtitleSm md:text-subtitle mb-2 md:mb-2">
             Hi there, I am{" "}
           </div>
-          <div className="text-titleSm md:text-title mb-3 text-navy">
-            Christoforos
-          </div>
-          <div className="text-subtitleSm md:text-subtitle text-navy mb-10">
+          <div className="text-titleSm md:text-title mb-3">Christoforos</div>
+          <div className="text-subtitleSm md:text-subtitle mb-10">
             Web Engineer, Innovator, Tutor
           </div>
           <div className="flex gap-4 mb-6 max-sm:flex-col">

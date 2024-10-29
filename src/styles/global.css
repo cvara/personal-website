@@ -5,7 +5,8 @@
 @layer base {
   body {
     font-family: "Poppins", sans-serif !important;
-    @apply bg-gradient-to-tr from-purple-light to-teal-light;
+    @apply transition-colors;
     @apply text-navy !important;
+    @apply dark:bg-navy dark:text-white !important;
   }
 }

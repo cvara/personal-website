@@ -92,7 +92,7 @@ const Experience = ({ experience, className }) => {
 
       {experience.technologies && (
         <div
-          className="mt-3 text-xs text-navy font-medium leading-5"
+          className="mt-3 text-xs font-medium leading-5"
           dangerouslySetInnerHTML={{
             __html: highlightDiploma(experience.technologies),
           }}
