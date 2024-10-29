@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout";
@@ -194,7 +193,7 @@ const CV = () => (
       </div>
 
       <div className="mb-14 font-light">
-        <p className="mb-3 text-lg font-normal">
+        <p className="mb-3 text-lg font-normal dark:font-medium">
           Full-stack web engineer with a strong focus on front-end technologies
           and co-founder of a web-based startup, I’ve been professionally
           immersed in the web ecosystem since 2011.
@@ -243,29 +242,31 @@ const CV = () => (
         <ResumeTitle>Tech Skills Overview</ResumeTitle>
         <div className="flex flex-col gap-4">
           <div>
-            <div className="text-base font-medium mb-2">Web Development</div>
+            <div className="text-base font-medium dark:font-semibold mb-2">
+              Web Development
+            </div>
             <div className="flex flex-col gap-2 text-sm ml-0">
               <div className="font-light">
-                <strong className="text-purple/80 font-medium">
+                <strong className="text-purple/80 dark:text-purple font-medium">
                   Languages &middot;
                 </strong>{" "}
                 Javascript, Typescript, HTML5, CSS3, Java (Servlets/JSP), Groovy
               </div>
               <div className="font-light">
-                <strong className="text-purple/80 font-medium">
+                <strong className="text-purple/80 dark:text-purple font-medium">
                   Frameworks & Libraries &middot;
                 </strong>{" "}
                 React, Redux, Next.js, Express, RxJS, Backbone, Marionette,
                 Grails
               </div>
               <div className="font-light">
-                <strong className="text-purple/80 font-medium">
+                <strong className="text-purple/80 dark:text-purple font-medium">
                   CSS Preprocessors & Tools &middot;
                 </strong>{" "}
                 Tailwind, Less, Sass, Webpack, Rollup, Gulp, Grunt
               </div>
               <div className="font-light">
-                <strong className="text-purple/80 font-medium">
+                <strong className="text-purple/80 dark:text-purple font-medium">
                   Technologies &middot;
                 </strong>{" "}
                 Node.js, REST, GraphQL, Socket.io, Web Workers, Service Workers,
@@ -275,7 +276,7 @@ const CV = () => (
           </div>
 
           <div>
-            <div className="text-base font-medium mb-2">
+            <div className="text-base font-medium dark:font-semibold mb-2">
               Testing & Automation
             </div>
             <div className="text-sm ml-0 font-light">
@@ -285,14 +286,16 @@ const CV = () => (
           </div>
 
           <div>
-            <div className="text-base font-medium mb-2">Databases</div>
+            <div className="text-base font-medium dark:font-semibold mb-2">
+              Databases
+            </div>
             <div className="text-sm ml-0 font-light">
               RxDB, PouchDB, MySQL, PostgreSQL, MongoDB, Couchbase
             </div>
           </div>
 
           <div>
-            <div className="text-base font-medium mb-2">
+            <div className="text-base font-medium dark:font-semibold mb-2">
               General Programming
             </div>
             <div className="text-sm ml-0 font-light">
@@ -301,7 +304,7 @@ const CV = () => (
           </div>
 
           <div>
-            <div className="text-base font-medium mb-2">
+            <div className="text-base font-medium dark:font-semibold mb-2">
               DevOps & Version Control
             </div>
             <div className="text-sm ml-0 font-light">Git, Docker</div>
@@ -313,7 +316,7 @@ const CV = () => (
         <ResumeTitle>Honors & Awards</ResumeTitle>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <div className="font-medium">
+            <div className="font-medium dark:font-semibold">
               Scholarship from the Greek National Foundation of Scholarships
             </div>
             <div className="text-sm font-light">
@@ -324,7 +327,7 @@ const CV = () => (
           </div>
 
           <div className="flex flex-col gap-1">
-            <div className="font-medium">
+            <div className="font-medium dark:font-semibold">
               1st Prize &middot; Ennovation 2015
             </div>
             <div className="text-sm font-light">

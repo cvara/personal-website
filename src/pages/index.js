@@ -34,7 +34,7 @@ const IndexPage = () => (
           </div>
           <div className="flex gap-4 mb-6 max-sm:flex-col">
             <a href="mailto:c.varakliotis@gmail.com">
-              <Button className="w-40">Say hello</Button>
+              <Button className="w-40">Say Hello</Button>
             </a>
 
             <Link to="/cv">

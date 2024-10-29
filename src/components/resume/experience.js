@@ -62,7 +62,7 @@ const Experience = ({ experience, className }) => {
                 href={experience.companyUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-semibold border-b-[2px] border-dashed border-purple/50 hover:text-purple no-underline hover:border-purple print:text-purple"
+                className="text-sm bg-gradient-to-tr from-purple to-teal text-transparent bg-clip-text font-semibold border-b-[2px] border-dashed border-purple/50 dark:border-purple hover:text-purple no-underline hover:border-purple print:text-purple"
               >
                 {experience.company}
               </a>
@@ -87,7 +87,10 @@ const Experience = ({ experience, className }) => {
         dangerouslySetInnerHTML={{
           __html: experience.description,
         }}
-        className={clsx(styles.description, "font-light text-sm")}
+        className={clsx(
+          styles.description,
+          "font-light text-sm dark:font-extralight",
+        )}
       />
 
       {experience.technologies && (

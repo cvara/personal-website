@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
         {isNotRoot && (
           <Link
             to="/"
-            className="text-sm inline-flex items-center gap-1 no-underline opacity-80 hover:opacity-100 pr-2 "
+            className="text-sm inline-flex items-center gap-1 no-underline opacity-80 hover:opacity-100 pr-2 dark:opacity-90"
           >
             <BackIcon
               width={12}

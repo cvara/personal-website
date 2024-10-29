@@ -17,7 +17,7 @@ const SkillGauge = ({ idx, level }) => (
       "basis-1/4 h-[5px] first-of-type:rounded-l last-of-type:rounded-r",
       {
         "bg-gradient-to-tr from-purple to-purple": level >= idx,
-        "bg-gray opacity-25": level < idx,
+        "bg-gray dark:bg-purple-light opacity-25 dark:opacity-10": level < idx,
       },
     )}
   />
