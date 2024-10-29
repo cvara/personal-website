@@ -53,7 +53,9 @@ const Experience = ({ experience, className }) => {
       </div>
 
       <div className="flex gap-2 items-center mb-2 max-md:flex-col max-md:items-start max-md:gap-1">
-        <div className="text-md font-semibold">{experience.title}</div>
+        <div className="text-md font-semibold dark:font-bold">
+          {experience.title}
+        </div>
         <span className="max-md:hidden">&middot;</span>
         <div className="flex gap-2 items-center max-md:mb-2">
           <div className="text-md">
@@ -87,15 +89,12 @@ const Experience = ({ experience, className }) => {
         dangerouslySetInnerHTML={{
           __html: experience.description,
         }}
-        className={clsx(
-          styles.description,
-          "font-light text-sm dark:font-extralight",
-        )}
+        className={clsx(styles.description, "font-light text-sm")}
       />
 
       {experience.technologies && (
         <div
-          className="mt-3 text-xs font-medium leading-5"
+          className="mt-3 text-xs font-medium dark:font-semibold leading-5"
           dangerouslySetInnerHTML={{
             __html: highlightDiploma(experience.technologies),
           }}

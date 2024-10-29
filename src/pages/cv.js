@@ -101,6 +101,7 @@ const positions = [
   {
     title: "Student",
     company: "University of Thessaly",
+    companyUrl: "https://www.e-ce.uth.gr/",
     start: "Sep 2004",
     end: "Sep 2010",
     technologies:

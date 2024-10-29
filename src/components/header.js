@@ -36,9 +36,9 @@ const Header = ({ siteTitle }) => {
         aria-label="Toggle theme"
       >
         {theme === "dark" ? (
-          <LightIcon width={14} className="fill-white/35 hover:fill-white/80" />
+          <LightIcon width={18} className="fill-white/20 hover:fill-white/80" />
         ) : (
-          <DarkIcon width={14} className="fill-navy/35 hover:fill-navy/80" />
+          <DarkIcon width={18} className="fill-navy/20 hover:fill-navy/80" />
         )}
       </button>
     </header>

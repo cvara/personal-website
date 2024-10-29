@@ -48,7 +48,7 @@ const IndexPage = () => (
               rel="noreferrer"
               aria-label="Github Profile"
             >
-              <GithubIcon width={32} />
+              <GithubIcon width={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/christoforosvarakliotis/"
@@ -56,7 +56,7 @@ const IndexPage = () => (
               rel="noreferrer"
               aria-label="LinkedIn Profile"
             >
-              <LinkedinIcon width={32} />
+              <LinkedinIcon width={30} />
             </a>
           </div>
         </div>

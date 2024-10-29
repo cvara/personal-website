@@ -15,5 +15,9 @@
 
   strong {
     @apply font-medium;
+
+    :global(.dark) & {
+      @apply font-semibold;
+    }
   }
 }
