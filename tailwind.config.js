@@ -53,7 +53,7 @@ module.exports = {
           },
         ],
         subtitleSm: [
-          "21px",
+          "20px",
           {
             lineHeight: "1.2",
             // letterSpacing: '-0.02em',
