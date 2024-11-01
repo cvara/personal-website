@@ -26,15 +26,19 @@ const IndexPage = () => (
         </div>
         <div className="flex flex-col items-center">
           <div className="text-subtitleSm md:text-subtitle mb-2 md:mb-2">
-            Hi there, I am{" "}
+            Hi there, I &apos;m{" "}
           </div>
           <div className="text-titleSm md:text-title mb-3">Christoforos</div>
-          <div className="text-subtitleSm md:text-subtitle mb-10">
-            Web Engineer, Innovator, Tutor
+          <div className="text-subtitleSm md:text-subtitle mb-10 flex gap-2">
+            Web Engineer
+            <span className="text-purple">&middot;</span>
+            Innovator
+            <span className="text-purple">&middot;</span>
+            Tutor
           </div>
           <div className="flex gap-4 mb-6 max-sm:flex-col">
             <a href="mailto:c.varakliotis@gmail.com">
-              <Button className="w-40">Say Hello</Button>
+              <Button className="w-40">Contact Me</Button>
             </a>
 
             <Link to="/cv">
