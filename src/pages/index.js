@@ -29,11 +29,11 @@ const IndexPage = () => (
             Hi there, I &apos;m{" "}
           </div>
           <div className="text-titleSm md:text-title mb-3">Christoforos</div>
-          <div className="text-subtitleSm md:text-subtitle mb-10 flex gap-2">
+          <div className="text-subtitleSm md:text-subtitle mb-10 flex gap-1.5">
             Web Engineer
-            <span className="text-purple">&middot;</span>
+            <span className="text-purple dark:text-white">&middot;</span>
             Innovator
-            <span className="text-purple">&middot;</span>
+            <span className="text-purple dark:text-white">&middot;</span>
             Tutor
           </div>
           <div className="flex gap-4 mb-6 max-sm:flex-col">
