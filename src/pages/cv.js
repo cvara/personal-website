@@ -157,7 +157,7 @@ const CV = () => (
             Christoforos Varakliotis
           </div>
           <div className="text-lg sm:text-xl mb-1 flex gap-2 items-center font-light">
-            Web Engineer
+            <div className="mr-1">Web Engineer</div>
             <a
               href="https://github.com/cvara"
               target="_blank"

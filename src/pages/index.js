@@ -29,7 +29,7 @@ const IndexPage = () => (
             Hi there, I &apos;m{" "}
           </div>
           <div className="text-titleSm md:text-title mb-3">Christoforos</div>
-          <div className="text-subtitleSm md:text-subtitle mb-10 flex gap-1.5">
+          <div className="text-subtitleSm md:text-subtitle mb-10 flex gap-1.5 sm:gap-2">
             Web Engineer
             <span className="text-purple dark:text-white">&middot;</span>
             Innovator
@@ -53,7 +53,7 @@ const IndexPage = () => (
               aria-label="Github Profile"
               className="hover:scale-105"
             >
-              <GithubIcon height={30} width={30} />
+              <GithubIcon height={26} width={26} />
             </a>
             <a
               href="https://www.linkedin.com/in/christoforosvarakliotis/"
@@ -62,7 +62,7 @@ const IndexPage = () => (
               aria-label="LinkedIn Profile"
               className="hover:scale-105"
             >
-              <LinkedinIcon height={30} width={30} />
+              <LinkedinIcon height={26} width={26} />
             </a>
           </div>
         </div>
