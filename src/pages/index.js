@@ -6,8 +6,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Button from "../components/button";
 
-import GithubIcon from "../svg/github.svg";
-import LinkedinIcon from "../svg/linkedin.svg";
+import GithubIcon from "../svg/github_2.svg";
+import LinkedinIcon from "../svg/linkedin_2.svg";
 
 const IndexPage = () => (
   <Layout>
@@ -51,16 +51,18 @@ const IndexPage = () => (
               target="_blank"
               rel="noreferrer"
               aria-label="Github Profile"
+              className="hover:scale-105"
             >
-              <GithubIcon width={30} />
+              <GithubIcon height={30} width={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/christoforosvarakliotis/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn Profile"
+              className="hover:scale-105"
             >
-              <LinkedinIcon width={30} />
+              <LinkedinIcon height={30} width={30} />
             </a>
           </div>
         </div>

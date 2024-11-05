@@ -8,8 +8,8 @@ import ResumeProject from "../components/resume/project";
 import ResumeTitle from "../components/resume/title";
 import Skills from "../components/resume/skills";
 
-import GithubIcon from "../svg/github.svg";
-import LinkedinIcon from "../svg/linkedin.svg";
+import GithubIcon from "../svg/github_2.svg";
+import LinkedinIcon from "../svg/linkedin_2.svg";
 
 const positions = [
   {
@@ -163,16 +163,18 @@ const CV = () => (
               target="_blank"
               rel="noreferrer"
               title="GitHub"
+              className="hover:scale-105"
             >
-              <GithubIcon width={20} height="auto" />
+              <GithubIcon width={18} height={18} />
             </a>
             <a
               href="https://www.linkedin.com/in/christoforosvarakliotis/"
               target="_blank"
               rel="noreferrer"
               title="LinkedIn"
+              className="hover:scale-105"
             >
-              <LinkedinIcon width={20} height="auto" />
+              <LinkedinIcon width={18} height={18} />
             </a>
           </div>
           <div className="hidden print:flex gap-2 text-purple">
