@@ -140,8 +140,8 @@ const skills = [
 const CV = () => (
   <Layout>
     <div className="max-w-[680px] m-auto p-4 pt-2">
-      <div className="flex gap-4 items-center mb-12">
-        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[112px] print:p-0">
+      <div className="flex gap-4 items-center mb-12 flex-col sm:flex-row">
+        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[84px] sm:w-[96px] md:w-[112px] print:p-0">
           <StaticImage
             src="../images/profile_pic.jpg"
             loading="eager"
@@ -152,7 +152,7 @@ const CV = () => (
             className="rounded-full overflow-clip print:border-[3px] print:border-purple"
           />
         </div>
-        <div>
+        <div className="flex flex-col items-center sm:items-start">
           <div className="text-xl sm:text-2xl md:text-3xl font-semibold md:font-medium mb-1">
             Christoforos Varakliotis
           </div>
