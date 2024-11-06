@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
-import GithubIcon from "../../svg/github.svg";
+import GithubIcon from "../../svg/github_2.svg";
 import clsx from "clsx";
 
 const propTypes = {
@@ -23,8 +23,9 @@ const Project = ({ project, className }) => {
           target="_blank"
           rel="noreferrer"
           title="View on GitHub"
+          className="hover:scale-105"
         >
-          <GithubIcon height="auto" width={20} />
+          <GithubIcon height={16} width={16} />
         </a>
       </div>
       <div className="text-sm font-light">{project.description}</div>

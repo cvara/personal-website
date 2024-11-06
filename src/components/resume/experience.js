@@ -42,14 +42,19 @@ const Experience = ({ experience, className }) => {
       className={clsx(
         className,
         "[&:not(:last-child)]:pb-10 print:[&:not(:last-child)]:pb-8 relative pl-4 ml-2 print:pl-0 print:ml-0",
+        "flex flex-col",
       )}
     >
-      <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-purple print:hidden">
-        <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-t from-purple to-purple absolute top-[-6px] left-[-5px]" />
-        <div className="w-[8px] h-[2px] bg-purple absolute bottom-[-2px] left-[-3px]" />
+      <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-teal print:hidden">
+        <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-tr from-purple to-teal absolute top-[-5px] left-[-4px] flex items-center justify-center">
+          <div className="w-[6px] h-[6px] rounded-full bg-purple-light dark:bg-navy" />
+        </div>
+        <div className="w-[8px] h-[2px] bg-teal absolute bottom-[-2px] left-[-3px]" />
       </div>
-      <div className="text-xs bg-gradient-to-tr from-purple to-purple bg-clip-text text-transparent font-semibold mb-2">
-        {experience.start} - {experience.end}
+      <div className="shrink-1 flex">
+        <div className="text-xs bg-gradient-to-tr from-purple to-teal bg-clip-text text-transparent font-semibold mb-2">
+          {experience.start} - {experience.end}
+        </div>
       </div>
 
       <div className="flex gap-2 items-center mb-2 max-md:flex-col max-md:items-start max-md:gap-1">

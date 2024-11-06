@@ -250,26 +250,26 @@ const CV = () => (
             </div>
             <div className="flex flex-col gap-2 text-sm ml-0">
               <div className="font-light">
-                <strong className="text-purple/80 dark:text-purple font-medium">
+                <strong className="text-purple dark:text-purple font-light">
                   Languages &middot;
                 </strong>{" "}
                 Javascript, Typescript, HTML5, CSS3, Java (Servlets/JSP), Groovy
               </div>
               <div className="font-light">
-                <strong className="text-purple/80 dark:text-purple font-medium">
+                <strong className="text-purple dark:text-purple font-light">
                   Frameworks & Libraries &middot;
                 </strong>{" "}
                 React, Redux, Next.js, Express, RxJS, Backbone, Marionette,
                 Grails
               </div>
               <div className="font-light">
-                <strong className="text-purple/80 dark:text-purple font-medium">
+                <strong className="text-purple dark:text-purple font-light">
                   CSS Preprocessors & Tools &middot;
                 </strong>{" "}
                 Tailwind, Less, Sass, Webpack, Rollup, Gulp, Grunt
               </div>
               <div className="font-light">
-                <strong className="text-purple/80 dark:text-purple font-medium">
+                <strong className="text-purple dark:text-purple font-light">
                   Technologies &middot;
                 </strong>{" "}
                 Node.js, REST, GraphQL, Socket.io, Web Workers, Service Workers,
