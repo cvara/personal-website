@@ -10,6 +10,7 @@ import Skills from "../components/resume/skills";
 
 import GithubIcon from "../svg/github_2.svg";
 import LinkedinIcon from "../svg/linkedin_2.svg";
+import EmailIcon from "../svg/email.svg";
 
 const positions = [
   {
@@ -141,7 +142,7 @@ const CV = () => (
   <Layout>
     <div className="max-w-[680px] m-auto p-4 pt-2">
       <div className="flex gap-4 items-center mb-12 flex-col sm:flex-row">
-        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[84px] sm:w-[96px] md:w-[112px] print:p-0">
+        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[84px] sm:w-[96px] md:w-[96px] print:p-0">
           <StaticImage
             src="../images/profile_pic.jpg"
             loading="eager"
@@ -156,26 +157,35 @@ const CV = () => (
           <div className="text-xl sm:text-2xl md:text-3xl font-semibold md:font-medium mb-1">
             Christoforos Varakliotis
           </div>
-          <div className="text-lg sm:text-xl mb-1 flex gap-2 items-center font-light">
-            <div className="mr-1">Web Engineer</div>
-            <a
-              href="https://github.com/cvara"
-              target="_blank"
-              rel="noreferrer"
-              title="GitHub"
-              className="hover:scale-105"
-            >
-              <GithubIcon width={18} height={18} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/christoforosvarakliotis/"
-              target="_blank"
-              rel="noreferrer"
-              title="LinkedIn"
-              className="hover:scale-105"
-            >
-              <LinkedinIcon width={18} height={18} />
-            </a>
+          <div className="text-lg sm:text-xl mb-1 flex flex-col sm:flex-row gap-3 items-center font-light">
+            Web Engineer
+            <div className="flex gap-2 items-center">
+              <a
+                href="https://github.com/cvara"
+                target="_blank"
+                rel="noreferrer"
+                title="GitHub"
+                className="hover:scale-105"
+              >
+                <GithubIcon width={18} height={18} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/christoforosvarakliotis/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+                className="hover:scale-105"
+              >
+                <LinkedinIcon width={18} height={18} />
+              </a>
+              {/* <a
+                href="mailto:c.varakliotis@gmail.com"
+                title="Email"
+                className="hover:scale-105"
+              >
+                <EmailIcon width={20} height={20} />
+              </a> */}
+            </div>
           </div>
           <div className="hidden print:flex gap-2 text-purple">
             <a

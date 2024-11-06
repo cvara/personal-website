@@ -19,12 +19,12 @@ const Header = ({ siteTitle }) => {
         {isNotRoot && (
           <Link
             to="/"
-            className="text-sm inline-flex items-center gap-1 no-underline opacity-80 hover:opacity-100 pr-2 dark:opacity-90"
+            className="text-sm font-medium inline-flex items-center gap-1 no-underline opacity-40 hover:opacity-100 pr-2 text-navy dark:text-white"
           >
             <BackIcon
               width={12}
               height="auto"
-              className="text-purple fill-purple"
+              className="text-navy dark:text-white fill-navy dark:fill-white "
             />{" "}
             back
           </Link>
