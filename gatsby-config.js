@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        policy: [{ userAgent: "*", allow: "/", disallow: "/cv" }],
+        policy: [{ userAgent: "*", allow: "/" }],
       },
     },
   ],

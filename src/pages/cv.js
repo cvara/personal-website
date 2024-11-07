@@ -369,6 +369,6 @@ const CV = () => {
   );
 };
 
-export const Head = () => <Seo title="CV" />;
+export const Head = () => <Seo title="CV" index />;
 
 export default CV;
