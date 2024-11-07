@@ -5,7 +5,7 @@ import * as styles from "./experience.module.css";
 import clsx from "clsx";
 
 const propTypes = {
-  experience: {
+  experience: PropTypes.shape({
     title: PropTypes.string,
     occupation: PropTypes.string,
     company: PropTypes.string,
@@ -14,7 +14,7 @@ const propTypes = {
     end: PropTypes.string,
     technologies: PropTypes.string,
     description: PropTypes.string,
-  },
+  }),
   className: PropTypes.string,
 };
 
@@ -46,8 +46,8 @@ const Experience = ({ experience, className }) => {
       )}
     >
       <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-teal print:hidden">
-        <div className="w-[10px] h-[10px] rounded-full bg-gradient-to-tr from-purple to-teal absolute top-[-5px] left-[-4px] flex items-center justify-center">
-          <div className="w-[6px] h-[6px] rounded-full bg-purple-light dark:bg-navy" />
+        <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-t from-purple to-teal absolute top-[-5px] left-[-5px] flex items-center justify-center">
+          <div className="w-[8px] h-[8px] rounded-full bg-purple-light dark:bg-navy" />
         </div>
         <div className="w-[8px] h-[2px] bg-teal absolute bottom-[-2px] left-[-3px]" />
       </div>

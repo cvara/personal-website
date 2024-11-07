@@ -11,6 +11,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import "./layout.css";
 
+import EmailIcon from "../svg/email.svg";
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,13 +34,24 @@ const Layout = ({ children }) => {
           {children}
         </div>
         <footer className="grow-0 shrink-0 flex-col flex items-center print:hidden">
-          <div className="inline-flex gap-1 text-purple font-medium opacity-100 text-[12px] px-2 py-3">
-            <div>© {new Date().getFullYear()} </div>&middot;{" "}
+          <div className="inline-flex items-center gap-2 text-purple font-medium opacity-100 text-[13px] px-2 py-3">
+            <div className="bg-gradient-to-tr from-purple to-purple bg-clip-text text-transparent">
+              © {new Date().getFullYear()}{" "}
+            </div>
+            &middot;{" "}
             <span className="bg-gradient-to-r from-purple to-teal bg-clip-text text-transparent">
               Christoforos Varakliotis
             </span>
+            &middot;{" "}
+            <a
+              href="mailto:c.varakliotis@gmail.com"
+              title="Email"
+              className="hover:scale-105"
+            >
+              <EmailIcon width={18} height={18} />
+            </a>
           </div>
-          <div className="text-center h-[4px] bg-gradient-to-r from-purple to-teal w-full" />
+          <div className="text-center h-[5px] bg-gradient-to-r from-purple to-teal w-full" />
         </footer>
       </main>
     </>

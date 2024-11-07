@@ -4,10 +4,12 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 
 const propTypes = {
-  skills: PropTypes.arrayOf({
-    title: PropTypes.string,
-    level: PropTypes.number,
-  }),
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      level: PropTypes.number,
+    }),
+  ),
   className: PropTypes.string,
 };
 

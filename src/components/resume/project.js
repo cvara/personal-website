@@ -5,11 +5,11 @@ import GithubIcon from "../../svg/github_2.svg";
 import clsx from "clsx";
 
 const propTypes = {
-  project: {
+  project: PropTypes.shape({
     title: PropTypes.string,
     url: PropTypes.string,
     description: PropTypes.string,
-  },
+  }),
   className: PropTypes.string,
 };
 

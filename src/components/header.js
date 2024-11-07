@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => {
           >
             <BackIcon
               width={12}
-              height="auto"
+              height={12}
               className="text-navy dark:text-white fill-navy dark:fill-white "
             />{" "}
             back

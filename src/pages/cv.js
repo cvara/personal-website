@@ -11,6 +11,8 @@ import Skills from "../components/resume/skills";
 import GithubIcon from "../svg/github_2.svg";
 import LinkedinIcon from "../svg/linkedin_2.svg";
 import EmailIcon from "../svg/email.svg";
+import useTailwindBreakpoint from "../hooks/useTailwindBreakpoint";
+import clsx from "clsx";
 
 const positions = [
   {
@@ -138,222 +140,234 @@ const skills = [
   { title: "Node.js", level: 7 },
 ];
 
-const CV = () => (
-  <Layout>
-    <div className="max-w-[680px] m-auto p-4 pt-2">
-      <div className="flex gap-4 items-center mb-12 flex-col sm:flex-row">
-        <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[84px] sm:w-[96px] md:w-[96px] print:p-0">
-          <StaticImage
-            src="../images/profile_pic.jpg"
-            loading="eager"
-            layout="fullWidth"
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt="profile pic"
-            className="rounded-full overflow-clip print:border-[3px] print:border-purple"
-          />
-        </div>
-        <div className="flex flex-col items-center sm:items-start">
-          <div className="text-xl sm:text-2xl md:text-3xl font-semibold md:font-medium mb-1">
-            Christoforos Varakliotis
+const CV = () => {
+  const bp = useTailwindBreakpoint();
+  const iconSize = bp === "below-sm" ? 22 : 18;
+
+  return (
+    <Layout>
+      <div className="max-w-[680px] m-auto p-4 pt-2">
+        <div className="flex gap-4 items-center mb-12 flex-col sm:flex-row">
+          <div className="bg-gradient-to-tr from-purple to-teal rounded-full p-[3px] w-[84px] sm:w-[96px] md:w-[96px] print:p-0">
+            <StaticImage
+              src="../images/profile_pic.jpg"
+              loading="eager"
+              layout="fullWidth"
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="profile pic"
+              className="rounded-full overflow-clip print:border-[3px] print:border-purple"
+            />
           </div>
-          <div className="text-lg sm:text-xl mb-1 flex flex-col sm:flex-row gap-3 items-center font-light">
-            Web Engineer
-            <div className="flex gap-2 items-center">
-              <a
-                href="https://github.com/cvara"
-                target="_blank"
-                rel="noreferrer"
-                title="GitHub"
-                className="hover:scale-105"
+          <div className="flex flex-col items-center sm:items-start">
+            <div className="text-xl sm:text-2xl md:text-3xl font-semibold md:font-medium mb-1">
+              Christoforos Varakliotis
+            </div>
+            <div className="text-lg sm:text-xl mb-1 flex flex-col sm:flex-row gap-3 items-center font-light">
+              Web Engineer
+              <div
+                className={clsx("flex items-center", {
+                  "gap-2": bp !== "below-sm",
+                  "gap-4": bp === "below-sm",
+                })}
               >
-                <GithubIcon width={18} height={18} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/christoforosvarakliotis/"
-                target="_blank"
-                rel="noreferrer"
-                title="LinkedIn"
-                className="hover:scale-105"
-              >
-                <LinkedinIcon width={18} height={18} />
-              </a>
-              {/* <a
+                <a
+                  href="https://github.com/cvara"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="GitHub"
+                  className="hover:scale-105"
+                >
+                  <GithubIcon width={iconSize} height={iconSize} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/christoforosvarakliotis/"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="LinkedIn"
+                  className="hover:scale-105"
+                >
+                  <LinkedinIcon width={iconSize} height={iconSize} />
+                </a>
+                {/* <a
                 href="mailto:c.varakliotis@gmail.com"
                 title="Email"
                 className="hover:scale-105"
               >
                 <EmailIcon width={20} height={20} />
               </a> */}
-            </div>
-          </div>
-          <div className="hidden print:flex gap-2 text-purple">
-            <a
-              className="text-sm font decoration-2 decoration-dashed decoration-purple/80 underline text-purple hover:decoration-purple hover:decoration-dashed hover:decoration-2 hover:underline hover:text-purple"
-              href="mailto:c.varakliotis@gmail.com"
-            >
-              c.varakliotis@gmail.com
-            </a>
-            &middot;
-            <a
-              className="text-sm font decoration-2 decoration-dashed decoration-purple/80 underline text-purple hover:decoration-purple hover:decoration-dashed hover:decoration-2 hover:underline hover:text-purple"
-              href="https://christoforos.me"
-            >
-              christoforos.me
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="mb-14 font-light">
-        <p className="mb-3 text-lg font-normal dark:font-medium">
-          Full-stack web engineer with a strong focus on front-end technologies
-          and co-founder of a web-based startup, I’ve been professionally
-          immersed in the web ecosystem since 2011.
-        </p>
-        <p className="mb-3">
-          My expertise lies in building and testing responsive user interfaces
-          while solving algorithmic challenges with a focus on efficiency and
-          performance. With a passion for design, I’m deeply involved in
-          improving user experiences across the projects I work on.
-        </p>
-        <p className="mb-3">
-          I am always eager to learn and apply software design patterns to write
-          clean, idiomatic, and maintainable code. I have a particular passion
-          for JavaScript, open web standards, and functional programming.
-        </p>
-        <p className="mb-3">
-          I hold a Polytechnic Diploma in Computer & Communications Engineering
-          from the University of Thessaly, earned in 2010.
-        </p>
-      </div>
-
-      <div className="mb-16">
-        <ResumeTitle>The Road So Far</ResumeTitle>
-        <div className="flex flex-col">
-          {positions.map((position, idx) => (
-            <ResumeExperience key={idx} experience={position} />
-          ))}
-        </div>
-      </div>
-
-      <div className="mb-12">
-        <ResumeTitle>Featured Hobby Projects</ResumeTitle>
-        <div className="flex flex-col">
-          {projects.map((project, idx) => (
-            <ResumeProject key={idx} project={project} />
-          ))}
-        </div>
-      </div>
-
-      <div className="mb-12 print:hidden">
-        <ResumeTitle>Featured Tech Skills</ResumeTitle>
-        <Skills skills={skills} />
-      </div>
-
-      <div className="mb-12">
-        <ResumeTitle>Tech Skills Overview</ResumeTitle>
-        <div className="flex flex-col gap-4">
-          <div>
-            <div className="text-base font-medium dark:font-semibold mb-2">
-              Web Development
-            </div>
-            <div className="flex flex-col gap-2 text-sm ml-0">
-              <div className="font-light">
-                <strong className="text-purple dark:text-purple font-light">
-                  Languages &middot;
-                </strong>{" "}
-                Javascript, Typescript, HTML5, CSS3, Java (Servlets/JSP), Groovy
-              </div>
-              <div className="font-light">
-                <strong className="text-purple dark:text-purple font-light">
-                  Frameworks & Libraries &middot;
-                </strong>{" "}
-                React, Redux, Next.js, Express, RxJS, Backbone, Marionette,
-                Grails
-              </div>
-              <div className="font-light">
-                <strong className="text-purple dark:text-purple font-light">
-                  CSS Preprocessors & Tools &middot;
-                </strong>{" "}
-                Tailwind, Less, Sass, Webpack, Rollup, Gulp, Grunt
-              </div>
-              <div className="font-light">
-                <strong className="text-purple dark:text-purple font-light">
-                  Technologies &middot;
-                </strong>{" "}
-                Node.js, REST, GraphQL, Socket.io, Web Workers, Service Workers,
-                PWA
               </div>
             </div>
-          </div>
-
-          <div>
-            <div className="text-base font-medium dark:font-semibold mb-2">
-              Testing & Automation
-            </div>
-            <div className="text-sm ml-0 font-light">
-              Jest, React Testing Library, Cypress, Karma, Mocha, Chai, Sinon,
-              Istanbul
-            </div>
-          </div>
-
-          <div>
-            <div className="text-base font-medium dark:font-semibold mb-2">
-              Databases
-            </div>
-            <div className="text-sm ml-0 font-light">
-              RxDB, PouchDB, MySQL, PostgreSQL, MongoDB, Couchbase
-            </div>
-          </div>
-
-          <div>
-            <div className="text-base font-medium dark:font-semibold mb-2">
-              General Programming
-            </div>
-            <div className="text-sm ml-0 font-light">
-              C, Java, Javascript, Groovy, Perl, PHP, VBA, MIPS Assembly, VHDL
-            </div>
-          </div>
-
-          <div>
-            <div className="text-base font-medium dark:font-semibold mb-2">
-              DevOps & Version Control
-            </div>
-            <div className="text-sm ml-0 font-light">Git, Docker</div>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <ResumeTitle>Honors & Awards</ResumeTitle>
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
-            <div className="font-medium dark:font-semibold">
-              Scholarship from the Greek National Foundation of Scholarships
-            </div>
-            <div className="text-sm font-light">
-              Awarded for ranking 1st among students in the Department of
-              Computer & Communications Engineering at the University of
-              Thessaly for two consecutive academic years (2004 & 2005).
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-1">
-            <div className="font-medium dark:font-semibold">
-              1st Prize &middot; Ennovation 2015
-            </div>
-            <div className="text-sm font-light">
-              Noodio received 1st place in the Innovation & Entrepreneurship
-              category at the 2015 Ennovation competition, recognizing its
-              innovative business model and core idea.
+            <div className="hidden print:flex gap-2 text-purple">
+              <a
+                className="text-sm font decoration-2 decoration-dashed decoration-purple/80 underline text-purple hover:decoration-purple hover:decoration-dashed hover:decoration-2 hover:underline hover:text-purple"
+                href="mailto:c.varakliotis@gmail.com"
+              >
+                c.varakliotis@gmail.com
+              </a>
+              &middot;
+              <a
+                className="text-sm font decoration-2 decoration-dashed decoration-purple/80 underline text-purple hover:decoration-purple hover:decoration-dashed hover:decoration-2 hover:underline hover:text-purple"
+                href="https://christoforos.me"
+              >
+                christoforos.me
+              </a>
             </div>
           </div>
         </div>
+
+        <div className="mb-14 font-light">
+          <p className="mb-6 text-lg font-normal dark:font-medium leading-7">
+            Full-stack web engineer with a strong focus on front-end
+            technologies and co-founder of a web-based startup, I’ve been
+            professionally immersed in the web ecosystem since 2011.
+          </p>
+          <p className="mb-3  leading-7">
+            My expertise lies in building and testing responsive user interfaces
+            while solving algorithmic challenges with a focus on efficiency and
+            performance. With a passion for design, I’m deeply involved in
+            improving user experiences across the projects I work on.
+          </p>
+          <p className="mb-3  leading-7">
+            I am always eager to learn and apply software design patterns to
+            write clean, idiomatic, and maintainable code. I have a particular
+            passion for JavaScript, open web standards, and functional
+            programming.
+          </p>
+          <p className="mb-3  leading-7">
+            I hold a Polytechnic Diploma in Computer & Communications
+            Engineering from the University of Thessaly, earned in 2010.
+          </p>
+        </div>
+
+        <div className="mb-16">
+          <ResumeTitle>The Road So Far</ResumeTitle>
+          <div className="flex flex-col">
+            {positions.map((position, idx) => (
+              <ResumeExperience key={idx} experience={position} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-12">
+          <ResumeTitle>Featured Hobby Projects</ResumeTitle>
+          <div className="flex flex-col">
+            {projects.map((project, idx) => (
+              <ResumeProject key={idx} project={project} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-12 print:hidden">
+          <ResumeTitle>Featured Tech Skills</ResumeTitle>
+          <Skills skills={skills} />
+        </div>
+
+        <div className="mb-12">
+          <ResumeTitle>Tech Skills Overview</ResumeTitle>
+          <div className="flex flex-col gap-4">
+            <div>
+              <div className="text-base font-medium dark:font-semibold mb-2">
+                Web Development
+              </div>
+              <div className="flex flex-col gap-2 text-sm ml-0">
+                <div className="font-light">
+                  <strong className="text-purple dark:text-purple font-light">
+                    Languages &middot;
+                  </strong>{" "}
+                  Javascript, Typescript, HTML5, CSS3, Java (Servlets/JSP),
+                  Groovy
+                </div>
+                <div className="font-light">
+                  <strong className="text-purple dark:text-purple font-light">
+                    Frameworks & Libraries &middot;
+                  </strong>{" "}
+                  React, Redux, Next.js, Express, RxJS, Backbone, Marionette,
+                  Grails
+                </div>
+                <div className="font-light">
+                  <strong className="text-purple dark:text-purple font-light">
+                    CSS Preprocessors & Tools &middot;
+                  </strong>{" "}
+                  Tailwind, Less, Sass, Webpack, Rollup, Gulp, Grunt
+                </div>
+                <div className="font-light">
+                  <strong className="text-purple dark:text-purple font-light">
+                    Technologies &middot;
+                  </strong>{" "}
+                  Node.js, REST, GraphQL, Socket.io, Web Workers, Service
+                  Workers, PWA
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="text-base font-medium dark:font-semibold mb-2">
+                Testing & Automation
+              </div>
+              <div className="text-sm ml-0 font-light">
+                Jest, React Testing Library, Cypress, Karma, Mocha, Chai, Sinon,
+                Istanbul
+              </div>
+            </div>
+
+            <div>
+              <div className="text-base font-medium dark:font-semibold mb-2">
+                Databases
+              </div>
+              <div className="text-sm ml-0 font-light">
+                RxDB, PouchDB, MySQL, PostgreSQL, MongoDB, Couchbase
+              </div>
+            </div>
+
+            <div>
+              <div className="text-base font-medium dark:font-semibold mb-2">
+                General Programming
+              </div>
+              <div className="text-sm ml-0 font-light">
+                C, Java, Javascript, Groovy, Perl, PHP, VBA, MIPS Assembly, VHDL
+              </div>
+            </div>
+
+            <div>
+              <div className="text-base font-medium dark:font-semibold mb-2">
+                DevOps & Version Control
+              </div>
+              <div className="text-sm ml-0 font-light">Git, Docker</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <ResumeTitle>Honors & Awards</ResumeTitle>
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-1">
+              <div className="font-medium dark:font-semibold">
+                Scholarship from the Greek National Foundation of Scholarships
+              </div>
+              <div className="text-sm font-light">
+                Awarded for ranking 1st among students in the Department of
+                Computer & Communications Engineering at the University of
+                Thessaly for two consecutive academic years (2004 & 2005).
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <div className="font-medium dark:font-semibold">
+                1st Prize &middot; Ennovation 2015
+              </div>
+              <div className="text-sm font-light">
+                Noodio received 1st place in the Innovation & Entrepreneurship
+                category at the 2015 Ennovation competition, recognizing its
+                innovative business model and core idea.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export const Head = () => <Seo title="CV" />;
 
