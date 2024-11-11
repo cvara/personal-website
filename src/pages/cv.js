@@ -107,9 +107,9 @@ const positions = [
     companyUrl: "https://www.e-ce.uth.gr/",
     start: "Sep 2004",
     end: "Sep 2010",
-    technologies:
+    diploma:
       "Polytechnic Diploma in Computer & Communications Engineering (degree: 7.9/10 &middot; Very Good)",
-    description: `As part of my diploma thesis, I developed a web application for targeted content promotion using a custom-built <strong>community-based filtering algorithm</strong> for musical content. This project later evolved into <strong>Noodio</strong>, my startup.`,
+    description: `As part of my studies at the <strong>Department of Computer & Communications Engineering</strong>, I developed a web application for targeted content promotion using a custom-built <strong>community-based filtering algorithm</strong> for musical content. This project later evolved into <strong>Noodio</strong>, my startup.`,
   },
 ];
 

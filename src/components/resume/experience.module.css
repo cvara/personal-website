@@ -1,11 +1,11 @@
 .description {
   a {
-    @apply decoration-2 decoration-dashed decoration-purple/50 underline text-purple/80 dark:text-purple/100 dark:decoration-purple;
+    @apply decoration-2 decoration-dashed decoration-purple/60 underline text-purple dark:decoration-purple;
     &:hover {
       @apply decoration-2 decoration-dashed underline text-purple decoration-purple;
     }
     :global(.dark) & {
-      @apply decoration-purple/80 text-purple;
+      /* @apply decoration-purple/80 text-purple; */
 
       &:hover {
         @apply decoration-purple text-purple;
