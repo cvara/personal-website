@@ -47,8 +47,8 @@ const Experience = ({ experience, className }) => {
       )}
     >
       <div className="w-[2px] absolute left-0 top-2 -bottom-2 bg-gradient-to-b from-purple to-teal print:hidden">
-        <div className="w-[12px] h-[12px] rounded-full bg-gradient-to-tr from-purple to-teal absolute top-[-5px] left-[-5px] flex items-center justify-center">
-          <div className="w-[8px] h-[8px] rounded-full bg-purple-light dark:bg-navy" />
+        <div className="w-[14px] h-[14px] rounded-full bg-gradient-to-tr from-purple to-teal absolute top-[-7px] left-[-6px] flex items-center justify-center">
+          <div className="w-[10px] h-[10px] rounded-full bg-white dark:bg-navy-dark transition-colors" />
         </div>
         <div className="w-[8px] h-[2px] bg-teal absolute bottom-[-2px] left-[-3px]" />
       </div>
@@ -99,7 +99,7 @@ const Experience = ({ experience, className }) => {
       />
 
       {experience.technologies && (
-        <div className="mt-2 text-xs font-normal leading-5 text-gray-dark">
+        <div className="mt-4 text-xs font-normal leading-5 text-gray-dark">
           <strong className="font-semibold text-navy dark:text-gray-light">
             Tech Stack:{" "}
           </strong>
@@ -114,7 +114,7 @@ const Experience = ({ experience, className }) => {
 
       {experience.diploma && (
         <div
-          className="mt-2 text-xs font-medium dark:font-semibold leading-5"
+          className="mt-4 text-xs font-medium dark:font-semibold leading-5"
           dangerouslySetInnerHTML={{
             __html: highlightDiploma(experience.diploma),
           }}

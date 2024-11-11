@@ -19,7 +19,11 @@ module.exports = {
         light: "#F2E9F4",
         DEFAULT: "#8E44AD",
       },
-      navy: "#1C2833",
+      navy: {
+        light: "#232F3A",
+        DEFAULT: "#1C2833",
+        dark: "#161E28",
+      },
       gray: {
         light: "#F5F7FA",
         DEFAULT: "#BDC3C7",
