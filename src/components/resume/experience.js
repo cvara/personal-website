@@ -58,7 +58,7 @@ const Experience = ({ experience, className }) => {
         </div>
       </div>
 
-      <div className="flex gap-1 mb-4 flex-col items-start">
+      <div className="flex gap-1 mb-3 flex-col items-start">
         <div className="text-md font-semibold dark:font-bold">
           {experience.title}
         </div>
