@@ -28,7 +28,7 @@ const IndexPage = () => (
             Hi there, I &apos;m{" "}
           </div>
           <div className="text-titleSm md:text-title mb-3">Christoforos</div>
-          <div className="text-subtitleSm md:text-subtitle mb-10 flex gap-1.5 sm:gap-2">
+          <div className="text-subtitleXs sm:text-subtitleSm md:text-subtitle mb-10 flex gap-1.5 sm:gap-2">
             Web Engineer
             <span className="text-purple dark:text-white">&middot;</span>
             Innovator

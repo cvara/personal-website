@@ -64,6 +64,14 @@ module.exports = {
             fontWeight: "200",
           },
         ],
+        subtitleXs: [
+          "16px",
+          {
+            lineHeight: "1.2",
+            // letterSpacing: '-0.02em',
+            fontWeight: "200",
+          },
+        ],
         fine: [
           "14px",
           {
