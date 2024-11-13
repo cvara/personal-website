@@ -65,7 +65,7 @@ module.exports = {
           },
         ],
         subtitleXs: [
-          "16px",
+          "18px",
           {
             lineHeight: "1.2",
             // letterSpacing: '-0.02em',

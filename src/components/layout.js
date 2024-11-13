@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           {children}
         </div>
         <footer className="grow-0 shrink-0 flex-col flex items-center print:hidden">
-          <div className="inline-flex items-center gap-2 text-purple font-medium opacity-100 text-[13px] px-2 py-3">
+          <div className="inline-flex  flex-wrap justify-center items-center gap-2 text-purple font-medium opacity-100 text-[13px] px-2 py-3">
             <div className="bg-gradient-to-tr from-purple to-purple bg-clip-text text-transparent">
               © {new Date().getFullYear()}{" "}
             </div>
